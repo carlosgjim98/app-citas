@@ -1,8 +1,36 @@
-ion-header{
-    ion-toolbar{
-        ion-title{
-            font-size: 16px; 
-            padding: 0;
-        }
-    }
+ion-content{
+    background: #F5F5F5;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    height: 15%;
+}
+
+.header-button{
+    height: 41px;
+    width: 41px;
+    min-height: 41px;
+    min-width: 41px;
+    margin-left: 0;
+    --background: #EF3890;
+}
+
+.arrow{
+    height: 12.89px;
+    width: 7.66px;
+}
+
+.head-title{
+    font-size: 15px;
+    color: #00191A;
+    font-family: 'Poppins Medium';
+    margin-right: 45.5%;
+}
+
+.text{
+    font-family: 'Poppins Regular';
+    font-size: 16px;
+    color: #1B1B1B;
 }
