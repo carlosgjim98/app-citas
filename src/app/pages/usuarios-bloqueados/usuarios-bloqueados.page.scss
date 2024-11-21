@@ -1,0 +1,60 @@
+.header-content{
+    display: flex;
+    align-items: center;
+    height: 15%;
+}
+
+.header-button{
+    height: 41px;
+    width: 41px;
+    min-height: 41px;
+    min-width: 41px;
+    margin-left: 0;
+    --background: #EF3890;
+}
+
+.arrow{
+    height: 12.89px;
+    width: 7.66px;
+}
+
+.head-title{
+    font-size: 15px;
+    color: #00191A;
+    font-family: 'Poppins Medium';
+    margin-right: 34.5%;
+}
+
+.card{
+    background: white;
+    height: 89.57px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.photo-content{
+    display: flex;
+    align-items: center;
+}
+
+.user-photo{
+    height: 47px;
+    width: 47px;
+}
+
+.name{
+    font-size: 16px;
+    font-family: 'Poppins Medium';
+    color: #100F0F;
+}
+
+.bloq-button{
+    height: 32px;
+    width: 93px;
+    --border-radius: 29px;
+    color: white;
+    font-size: 12px;
+    font-family: 'Poppins Regular';
+}
+

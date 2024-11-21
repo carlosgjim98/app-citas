@@ -1,0 +1,138 @@
+.header-content{
+    display: flex;
+    align-items: center;
+    height: 15%;
+}
+
+.header-button{
+    height: 41px;
+    width: 41px;
+    min-height: 41px;
+    min-width: 41px;
+    margin-left: 0;
+    --background: #EF3890;
+}
+
+.arrow{
+    height: 12.89px;
+    width: 7.66px;
+}
+
+.head-title{
+    font-size: 15px;
+    color: #00191A;
+    font-family: 'Poppins Medium';
+    margin-right: 34.5%;
+}
+
+.card{
+    width: 100%;
+    height: 185.73px;
+    border-radius: 10px;
+    background: white;
+    padding: 15px;
+}
+
+.card-title{
+    color: #100F0F;
+    font-size: 18px;
+    font-family: 'Poppins SemiBold';
+}
+
+.inside-card{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  justify-content: space-between;
+}
+
+.date-bonus{
+    color: #27323C;
+    font-family: 'Poppins Regular';
+    font-size: 18px;
+}
+
+.price{
+    color: #27323C;
+    font-size: 14px;
+    font-family: 'Poppins Medium';
+}
+
+hr{
+    background: black;
+    margin-top: 20px;
+}
+
+.month{
+    font-family: 'Poppins Regular';
+    font-size: 14px;
+    color: #27323C;
+}
+
+.next-reno{
+    font-family: 'Poppins Regular';
+    font-size: 15px;
+    color: #27323C;
+    margin-top: 20px;
+}
+
+.date-reno{
+    font-family: 'Poppins SemiBold';
+    font-size: 15px;
+    color: #27323C;
+}
+
+.card-2{
+    width: 100%;
+    height: 122px;
+    border-radius: 10px;
+    background: white;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.edit-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.pay-method{
+    font-family: 'Poppins Medium';
+    font-size: 15px;
+    color: #27323C;
+}
+
+.edit-button{
+    height: 32px;
+    min-height: 30px;
+    width: 76px;
+    --border-radius: 29px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Poppins Regular';
+    margin: 0;
+}
+
+.visa-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.visa{
+    font-family: 'Poppins Regular';
+    font-size: 18px;
+    color: #27323C;
+}
+
+.last-button{
+    --background: #3B3A3A;
+    height: 58px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins Regular';
+    margin-top: 70%;
+}

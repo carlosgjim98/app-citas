@@ -34,11 +34,6 @@ const routes: Routes = [
         pathMatch: 'full'
       }
     ]
-  },
-  {
-    path: '',
-    redirectTo: '/tabs/inicio',
-    pathMatch: 'full'
   }
 ];
 

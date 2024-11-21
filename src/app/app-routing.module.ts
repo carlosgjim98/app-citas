@@ -109,7 +109,6 @@ const routes: Routes = [
   },
   {
     path: 'suscripcion',
-
     loadChildren: () => import('./pages/suscripcion/suscripcion.module').then(m => m.SuscripcionPageModule)
   },
   {
@@ -119,9 +118,6 @@ const routes: Routes = [
   {
     path: 'confirmar-cita',
     loadChildren: () => import('./pages/confirmar-cita/confirmar-cita.module').then( m => m.ConfirmarCitaPageModule)
-  },
-{
-    loadChildren: () => import('./pages/suscripcion/suscripcion.module').then( m => m.SuscripcionPageModule)
   },
   {
     path: 'mis-citas',
@@ -139,7 +135,24 @@ const routes: Routes = [
   {
     path: 'configurar-mis-datos',
     loadChildren: () => import('./pages/configurar-mis-datos/configurar-mis-datos.module').then( m => m.ConfigurarMisDatosPageModule)
+  },
+  {
+    path: 'formulario-de-compatibilidad',
+    loadChildren: () => import('./pages/formulario-de-compatibilidad/formulario-de-compatibilidad.module').then( m => m.FormularioDeCompatibilidadPageModule)
+  },  {
+    path: 'mi-suscripcion',
+    loadChildren: () => import('./pages/mi-suscripcion/mi-suscripcion.module').then( m => m.MiSuscripcionPageModule)
+  },
+  {
+    path: 'usuarios-bloqueados',
+    loadChildren: () => import('./pages/usuarios-bloqueados/usuarios-bloqueados.module').then( m => m.UsuariosBloqueadosPageModule)
+  },
+  {
+    path: 'condiciones-de-venta',
+    loadChildren: () => import('./pages/condiciones-de-venta/condiciones-de-venta.module').then( m => m.CondicionesDeVentaPageModule)
   }
+
+
 
 
 

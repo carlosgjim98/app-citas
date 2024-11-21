@@ -1,16 +1,32 @@
+ion-header{
+    height: 15%;
+}
+
 .header-content{
     display: flex;
     align-items: center;
+    height: 15%;
 }
 
 .header-button{
     height: 41px;
     width: 41px;
+    min-height: 41px;
+    min-width: 41px;
+    margin-left: 0;
+    --background: #EF3890;
 }
 
 .arrow{
     height: 12.89px;
     width: 7.66px;
+}
+
+.head-title{
+    font-size: 15px;
+    color: #00191A;
+    font-family: 'Poppins Medium';
+    margin-right: 29.5%;
 }
 
 .image-content{
@@ -21,13 +37,23 @@
 .profile-image{
     height: 153px;
     width: 153px;
+    margin-bottom: 5%;
 }
 
 .change-button{
     height: 34px;
-    min-height: 34px;
+    min-height: 20px;
     width: 136px;
-    border-radius: 17px;
+    --border-radius: 17px;
+    --background: #EF3890;
+    color: white;
+    font-family: 'Poppins SemiBold';
+    font-size: 12px;
+    margin-bottom: 6%;
+}
+
+.items-content{
+    margin-top: 5%;
 }
 
 .input-content{
@@ -38,12 +64,21 @@
     margin-top: 10px;
 }
 
-.input-content :focus-within{
+.input-content:focus-within{
     border: 1px solid #EF3890;
-    border-radius: 10px;
+    
+}
+
+.pink-button{
+    width: 100%;
+    height: 58px;
+    margin-top: 20px;
 }
 
 .last-button{
     --background: white;
     color: #00191A;
+    width: 100%;
+    height: 58px;
+    margin-top: 20px;
 }
