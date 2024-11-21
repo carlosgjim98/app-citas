@@ -16,8 +16,8 @@ const routes: Routes = [
         loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
       },
       {
-        path: 'chats',
-        loadChildren: () => import('../chats/chats.module').then(m => m.ChatsPageModule)
+        path: 'chat',
+        loadChildren: () => import('../chat/chat.module').then(m => m.ChatPageModule)
       },
       {
         path: 'calendar',

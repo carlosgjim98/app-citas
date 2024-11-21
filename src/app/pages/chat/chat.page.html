@@ -1,0 +1,33 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="barra-busqueda-container">
+      <ion-searchbar placeholder="Buscar"></ion-searchbar>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-list>
+    <!-- Iteramos sobre los mensajes -->
+    <ion-item *ngFor="let mensaje of mensajes">
+      <ion-avatar slot="start">
+        <img [src]="mensaje.foto" alt="Foto de {{ mensaje.nombre }}">
+      </ion-avatar>
+      <ion-label class="message-label"  [routerLink]="mensaje.ruta"  [queryParams]="{ name: mensaje.nombreCompleto, avatar: mensaje.foto }">
+        <div class="name-time-container">
+          <h2>{{ mensaje.nombre }}</h2>
+          <p class="time">{{ mensaje.tiempo }}</p>
+        </div>
+        <div class="new-message-container" *ngIf="mensaje.tieneNuevo">
+          <p class="new-message">{{ mensaje.nuevoMensaje }}</p>
+          <ion-badge class="custom-badge">3</ion-badge>
+        </div>
+        <div *ngIf="!mensaje.tieneNuevo">
+          <p>{{ mensaje.mensaje }}</p>
+        </div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

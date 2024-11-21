@@ -131,7 +131,11 @@ const routes: Routes = [
     path: 'detalle-cita',
     loadChildren: () => import('./pages/detalle-cita/detalle-cita.module').then( m => m.DetalleCitaPageModule)
 
+  },  {
+    path: 'chat',
+    loadChildren: () => import('./pages/chat/chat.module').then( m => m.ChatPageModule)
   }
+
 
 
 
