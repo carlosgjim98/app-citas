@@ -131,9 +131,14 @@ const routes: Routes = [
     path: 'detalle-cita',
     loadChildren: () => import('./pages/detalle-cita/detalle-cita.module').then( m => m.DetalleCitaPageModule)
 
-  },  {
+  },
+  {
     path: 'chat',
     loadChildren: () => import('./pages/chat/chat.module').then( m => m.ChatPageModule)
+  },
+  {
+    path: 'configurar-mis-datos',
+    loadChildren: () => import('./pages/configurar-mis-datos/configurar-mis-datos.module').then( m => m.ConfigurarMisDatosPageModule)
   }
 
 
