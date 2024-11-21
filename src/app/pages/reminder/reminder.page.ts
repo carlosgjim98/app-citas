@@ -6,9 +6,10 @@ import { ApiService } from 'src/app/services/api.service';
 import { UtilitiesService } from 'src/app/services/utilities.service';
 
 @Component({
-  selector: 'app-reminder',
-  templateUrl: './reminder.page.html',
-  styleUrls: ['./reminder.page.scss'],
+    selector: 'app-reminder',
+    templateUrl: './reminder.page.html',
+    styleUrls: ['./reminder.page.scss'],
+    standalone: false
 })
 export class ReminderPage implements OnInit {
 

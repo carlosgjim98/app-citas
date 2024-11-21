@@ -1,86 +1,43 @@
-<ion-header>
-  <ion-toolbar>
-    <div class="header-container">
-      <div class="header-text">
-        <h1>Hola <span>Juan,</span></h1>
-        <h2>Consulta tus finanzas</h2>
-      </div>
-      <ion-button class="alert-button">
-        <ion-icon src="assets/icons/Alert.svg"></ion-icon>
-        <ion-badge  class="badge" slot="end">+99</ion-badge>
+<ion-header class="cabecera">
+  <div class="principal">
+    <div class="textos">
+      <p class="saludo">Hola <span class="nombre">Carlos</span>,</p>
+      <p class="saludo"> reserva tu próxima cita</p>
+    </div>
+    
+    <div class="notification">
+      <ion-button  class="notification-btn" routerLink="/notificaciones">
+        <ion-icon class="notification-icon" src="../../../assets/icons/bell.svg" slot="icon-only" ></ion-icon>
+        <ion-badge color="light" class="badge" slot="end">+99</ion-badge>
+     
       </ion-button>
     </div>
-  </ion-toolbar>
+  </div>
 </ion-header>
 
+<ion-content [fullscreen]="true">
+  <img src="assets/imgs/imagen inicio.png" alt="Imagen Inicio" class="imagen-inicio" />
 
-<ion-content [fullscreen]="true" class="ion-padding">
-
-  <ion-content>
-    <div class="chart-container">
-      <h2>Gestor patrimonial</h2>
-      <div class="chart-header">
-        
-        <ion-segment [(ngModel)]="selectedYear" (ionChange)="onYearChange()" >
-          <ion-segment-button value="2020">2020</ion-segment-button>
-          <ion-segment-button value="2021">2021</ion-segment-button>
-          <ion-segment-button value="2022">2022</ion-segment-button>
-          <ion-segment-button value="2023">2023</ion-segment-button>
-          <ion-segment-button value="2024" checked>2024</ion-segment-button>
-        </ion-segment>
-      </div>
-      <div class="chart-content">
-        
-        <canvas id="barChart"></canvas>
-      </div>
-    </div>
-  
-  <div class="chart-container">
-  <div class="chart-header">
-    <h2>Inversiones financieras</h2>
-  </div>
-  <div class="piechart">
-    <canvas id="pieChart"></canvas>
+  <div class="header-content">
+    <h1 class="title">Selección de fecha</h1>
+    <p class="subtitle">
+      Selecciona una de las fechas disponibles para mantener tu próxima cena
+    </p>
   </div>
 
-  <ul class="item-list">
-    <li class="item">
-      <span class="color-box" style="background-color: #B8A44F;"></span>
-      A&B
-    </li>
-    <li class="item">
-      <span class="color-box" style="background-color: #5CA1DC;"></span>
-      Indx A&B 400
-    </li>
-    <li class="item">
-      <span class="color-box" style="background-color: #0A4E88;"></span>
-      App Inc.
-    </li>
-    <li class="item">
-      <span class="color-box" style="background-color: #AFD7F8;"></span>
-      S.E Ab
-    </li>
-  </ul>
-</div>
-
-<div class="chart-container">
-  <div class="chart-header">
-    <h2>Deudas</h2>
+  <div class="date-selection">
+    <ion-item
+      *ngFor="let date of dates"
+      class="custom-item"
+      [ngClass]="{'selected': date.selected}"
+      lines="none"
+      (click)="onSelectDate(date)"
+      >
+      <ion-label routerLink="/seleccion-fecha-resultados" >{{ date.label }}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="date.selected" ></ion-checkbox>
+    </ion-item>
   </div>
- 
   
-  
-  
-</div>
-
-
-
-  
-
-
-  </ion-content>
-  
-
 
  
 </ion-content>

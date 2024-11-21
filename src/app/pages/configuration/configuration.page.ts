@@ -5,9 +5,10 @@ import { ApiService } from 'src/app/services/api.service';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 
 @Component({
-  selector: 'app-configuration',
-  templateUrl: './configuration.page.html',
-  styleUrls: ['./configuration.page.scss'],
+    selector: 'app-configuration',
+    templateUrl: './configuration.page.html',
+    styleUrls: ['./configuration.page.scss'],
+    standalone: false
 })
 export class ConfigurationPage implements OnInit {
 

@@ -4,9 +4,10 @@ import {TranslateService} from '@ngx-translate/core';
 import { UtilitiesService } from 'src/app/services/utilities.service';
 
 @Component({
-  selector: 'app-idiomas',
-  templateUrl: './idiomas.page.html',
-  styleUrls: ['./idiomas.page.scss'],
+    selector: 'app-idiomas',
+    templateUrl: './idiomas.page.html',
+    styleUrls: ['./idiomas.page.scss'],
+    standalone: false
 })
 export class IdiomasPage implements OnInit {
 

@@ -1,0 +1,241 @@
+ion-header{
+
+
+
+    .custom-toolbar {
+        --background: #F5F5F5;
+        padding: 10px 15px; 
+      
+        
+       
+      }
+      
+        .custom-header {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          position: relative;
+          padding: 0 15px;
+        }
+        
+      
+      
+        .header-content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between; 
+          width: 100%;
+          position: relative; 
+        }
+      
+      .back-button {
+        width: 40px; 
+        height: 40px; 
+        min-height: unset; 
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left:-30px;
+        --background:#F576B3;
+    
+        border-radius: 10px;
+      }
+      
+      .icono {
+        height: 15px;
+        width: 15px;
+        background-color: #ef3890;
+        
+       
+      }
+
+      
+      
+      .header-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); 
+        text-align: center;
+        top: 50%; 
+        transform: translate(-50%, -50%); 
+      }
+      
+      .header-title {
+        color: #00191A;
+        font-size: 15px;
+        font-family: Poppins Medium;
+        margin-left: 10px;
+        margin-top: 30px;
+        white-space: nowrap;
+      
+      }
+    }
+
+    .date-card {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+      }
+      
+      .date-card h1 {
+      
+        margin-top: 0;
+        color: #292426;
+        font-size: 14px;
+        font-style: Popping-Medium;
+        
+        
+      }
+      
+      .date-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .date-item {
+        display: flex;
+        align-items: center;
+        gap: 8px; 
+      }
+      
+      .date-item ion-icon {
+        width: 14px;
+        height: 14px;
+        color: #EF3890;
+        
+      }
+      
+      .date-item p {
+        font-size: 15px;
+        font-family: Poppins Regular;
+        color: #100F0F;
+        
+      }
+
+    .users {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin-top: 31px;
+      }
+      
+      .user-card {
+        background: #fff;
+        border-radius: 10px;
+        height: 148px;
+        box-shadow: 0 3px 6px #E2DCDC;
+        display: flex;
+        flex-direction: column; /* Organiza los elementos de arriba a abajo */
+      justify-content: flex-start; /* Alinea el contenido desde el principio del contenedor */
+      
+      h1{
+
+        color: #292426;
+        font-size: 14px;
+        font-style: Popping-Medium !important;
+        margin-left: 15px;
+        margin-bottom: 0;
+      }
+        
+      
+        .user-details {
+          display: flex;
+          align-items: center;
+         margin-left: 15px;
+         margin-top: 0;
+          gap: 10px;
+
+       
+      
+          .profile-image {
+            ion-avatar {
+                width: 65px; 
+                height: 65px;
+                background-color: #ef3890;
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                border-radius: 50%; 
+                overflow: hidden; 
+                margin-left: 0;
+                margin-top: 17px;
+            }
+            .user-icon {
+                width:66px; 
+                height: 66px;
+              }
+          }
+      
+        
+        }
+      
+        .user-info {
+            display: flex;
+            flex-direction: column;
+          top: 0px;
+            justify-content: flex-start;
+            padding-top: 0px;
+            
+            h2{
+                font-family: Poppins SemiBold;
+                font-size: 16px;
+                color: #292426;
+                margin-bottom: 0;
+            }
+          
+            .compatibility-bar-container {
+              display: flex;
+              align-items: center; 
+              gap: 8px; 
+              width: 100%; 
+            }
+            .description{
+    
+                font-size: 11px;
+                font-family: Poppins Regular;
+               color: #838383; 
+            }
+          
+            .compatibility-bar {
+              width: 60%; 
+              height: 8px;
+              background-color: #f1f1f1;
+              border-radius: 4px;
+              overflow: hidden;
+              background-color: #FFD9EB;
+          
+              .progress {
+                height: 100%;
+                background: #EF3890;
+                border-radius: 4px;
+                transition: width 0.3s ease; 
+              }
+           
+            }
+            .compatibility {
+                font-size: 11px;
+                font-family: Poppins Medium;
+                color: #EF3890;
+                white-space: nowrap; 
+              }
+        }
+    }
+
+       
+  .submit-button {
+    margin-top: 30px;
+    --background: #ef3890;
+    color: white;
+    font-size: 16px;
+    font-family: Poppins Regular;
+    border-radius: 10px;
+    max-height: 58px;
+    width: 100%
+  }

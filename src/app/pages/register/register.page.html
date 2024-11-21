@@ -1,46 +1,82 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
-    </ion-buttons>
-    <ion-title>{{'REGISTER.HEADER' | translate }}</ion-title>
-  </ion-toolbar>
-  <ion-buttons slot="end" routerLink="/idiomas">
-    <ion-icon *ngIf="this.translate.currentLang == 'es'" src="assets/icons/spain.svg"></ion-icon>
-    <ion-icon *ngIf="this.translate.currentLang == 'en'" src="assets/icons/ingles.svg"></ion-icon>
-    <ion-icon *ngIf="this.translate.currentLang == 'fr'" src="assets/icons/frances.svg"></ion-icon>
-  </ion-buttons>
-</ion-header>
+<div class="header-background">
+  <ion-header class="ion-no-border" [ngClass]="{'android-styleheader': isAndroid, 'ios-styleheader': isIOS}">
+    <div class="button-container">
+      <ion-buttons slot="start">
+        <button class="custom-back-button">
+          <ion-icon class="background-icon" src="assets/icons/backBackground.svg"></ion-icon>
+          <ion-icon class="foreground-icon" src="assets/icons/volver.svg"></ion-icon>
+        </button>
+      </ion-buttons>
+    </div>
+  </ion-header>
+  <div class="content-top"></div>
+</div>
 
-<ion-content class="ion-padding">
-    <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
-      <p class="ion-text-center">{{'REGISTER.TITLE' | translate }}</p>
-      <ion-item>
-        <ion-input clearInput type="text" placeholder="{{'REGISTER.NAME' | translate }}" formControlName="name" required>
-          <ion-icon slot="start" name="person-outline"></ion-icon>
-        </ion-input>
-      </ion-item>
+<div class="titulos">
+  <p class="title">Registro</p>
+  <p class="subtitle">Añade tus datos para continuar</p>
+</div>
+<!-- <ion-content class="ion-padding"> -->
 
-      <ion-item>
-        <ion-input clearInput type="email" placeholder="{{'REGISTER.EMAIL' | translate }}" formControlName="email" required>
-          <ion-icon slot="start" name="mail-outline"></ion-icon>
-        </ion-input>
-      </ion-item>
+<div class="login">
+  <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
+    <ion-item class="custom-item">
+      <div class="icon-input" slot="start"
+        [ngClass]="{'icon-person-selected': isNameFocused, 'icon-person': !isNameFocused}">
+      </div>
+      <ion-input clearInput type="text" placeholder="{{ 'REGISTER.NAME' | translate }}" formControlName="name" required
+        (click)="onFocus('name')" (blur)="onFocus('')">
+      </ion-input>
+    </ion-item>
 
-      <ion-item>
-        <ion-input clearInput type="password" placeholder="{{'REGISTER.PASSWORD' | translate }}" formControlName="password" required>
-          <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
-        </ion-input>
-      </ion-item>
+    <ion-item class="custom-item">
+      <div class="icon-input" slot="start"
+        [ngClass]="{'icon-email-selected': isEmailFocused, 'icon-email': !isEmailFocused}">
+      </div>
+      <ion-input clearInput type="email" placeholder="{{ 'REGISTER.EMAIL' | translate }}" formControlName="email"
+        required (click)="onFocus('email')" (blur)="onFocus('')">
+      </ion-input>
+    </ion-item>
 
-      <ion-item>
-        <ion-input clearInput type="password" placeholder="{{'REGISTER.CONFIRM_PASSWORD' | translate }}"
-          formControlName="password_confirmation" required>
-          <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
-        </ion-input>
-      </ion-item>
+    <ion-item class="custom-item">
+      <div class="icon-input" slot="start"
+        [ngClass]="{'icon-password-selected': isPasswordFocused, 'icon-password': !isPasswordFocused}">
+      </div>
+      <ion-icon slot='end' class="icon-eye" *ngIf="typeInput == 'password'" name="eye-off"
+        (click)="changeType()"></ion-icon>
+      <ion-icon slot='end' class="icon-eye" *ngIf="typeInput == 'text'" name="eye" (click)="changeType()"></ion-icon>
+      <ion-input clearInput [type]="typeInput" placeholder="{{ 'REGISTER.PASSWORD' | translate }}"
+        formControlName="password" required (click)="onFocus('password')" (blur)="onFocus('')">
+      </ion-input>
+    </ion-item>
 
-      <ion-button expand="block" type="submit" [disabled]="!form.valid" color="tertiary">{{'REGISTER.CREATE_ACCOUNT' | translate }}</ion-button>
-      <ion-button expand="block" type="button" routerLink="/login">{{'REGISTER.HAVE_ACCOUNT' | translate }}</ion-button>
-    </form>
-</ion-content>
+    <ion-item class="custom-item">
+      <div class="icon-input" slot="start"
+        [ngClass]="{'icon-confirm-password-selected': isConfirmPasswordFocused, 'icon-confirm-password': !isConfirmPasswordFocused}">
+      </div>
+      <ion-icon slot='end' class="icon-eye" *ngIf="typeInput == 'password'" name="eye-off"
+        (click)="changeType()"></ion-icon>
+      <ion-icon slot='end' class="icon-eye" *ngIf="typeInput == 'text'" name="eye" (click)="changeType()"></ion-icon>
+      <ion-input clearInput type="password" placeholder="{{ 'REGISTER.CONFIRM_PASSWORD' | translate }}"
+        formControlName="password_confirmation" required (click)="onFocus('confirmPassword')" (blur)="onFocus('')">
+      </ion-input>
+    </ion-item>
+
+    <div class="container-a">
+      <ion-checkbox></ion-checkbox>
+      <p class="politicas">
+        He leído y acepto <a class="politicas-link" routerLink="/privacy-policy">la Política de Privacidad</a>
+        y <a class="politicas-link" routerLink="/condiciones-venta">los Términos y Condiciones de Venta</a>.
+      </p>
+    </div>
+
+    <ion-button expand="block" type="button" routerLink="/formulario">Registrarme</ion-button>
+  </form>
+
+<div class="goLogin">
+  <p>¿Ya tienes una cuenta? </p>
+  <p style="color:#EF3B92" routerLink="/login"> Ir a Log in</p>
+</div>
+
+</div>
+<!-- </ion-content> -->

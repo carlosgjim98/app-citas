@@ -4,9 +4,10 @@ import { UtilitiesService } from 'src/app/services/utilities.service';
 import { FileOpener, FileOpenerOptions } from '@capacitor-community/file-opener';
 
 @Component({
-  selector: 'app-test-plugins',
-  templateUrl: './test-plugins.page.html',
-  styleUrls: ['./test-plugins.page.scss'],
+    selector: 'app-test-plugins',
+    templateUrl: './test-plugins.page.html',
+    styleUrls: ['./test-plugins.page.scss'],
+    standalone: false
 })
 export class TestPluginsPage implements OnInit {
 

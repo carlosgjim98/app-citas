@@ -3,9 +3,10 @@ import { AnimationController, Gesture, GestureController, ModalController, NavPa
 import { PinchZoomComponent } from '@meddv/ngx-pinch-zoom';
 
 @Component({
-  selector: 'app-image-view',
-  templateUrl: './image-view.page.html',
-  styleUrls: ['./image-view.page.scss'],
+    selector: 'app-image-view',
+    templateUrl: './image-view.page.html',
+    styleUrls: ['./image-view.page.scss'],
+    standalone: false
 })
 export class ImageViewPage implements OnInit {
   @ViewChild('pinch') pinchZoom: PinchZoomComponent;

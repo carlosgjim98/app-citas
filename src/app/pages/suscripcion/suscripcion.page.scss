@@ -1,0 +1,188 @@
+ion-content{
+    --background: white;
+}
+
+.header{
+    //background: #EF3890;
+    height: 292px;
+    width: 100%;
+    // border-bottom-left-radius: 50% 20%;
+    // border-bottom-right-radius: 50% 20%;
+}
+
+.image-header{
+    position: absolute;
+    z-index: -5;
+}
+
+.hearts-content{
+    display: flex;
+    align-items: center;
+    padding-top: 20%;
+    padding-left: 5%;
+    gap: 132px;
+}
+
+.heart{
+    height: 27px;
+    width: 59px;
+}
+
+.hearts-title-content{
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.head-title{
+    font-size: 20px;
+    font-family: 'Poppins SemiBold';
+    color: white;
+    margin-bottom: 2%;
+}
+
+.head-paragraph{
+    font-size: 19px;
+    font-family: 'Poppins Regular';
+    color: white;
+}
+
+.text-image-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    font-size: 16px;
+    font-family: 'Poppins SemiBold';
+    color: #292426;
+}
+
+.text{
+    font-size: 16px;
+    font-family: 'Poppins Regular';
+    color: #292426;
+}
+
+.dinner{
+    height: 92.89px;
+    width: 92.96px;
+    margin-right: 12px;
+}
+
+.fire{
+    height: 127.58px;
+    width: 127.79px;
+}
+
+.love-letter{
+    height:101.54px ;
+    width: 101.47px;
+    margin-right: 12px;
+}
+
+.last-button{
+    color:white ;
+    font-size: 16px;
+    font-family: 'Poppins Regular';
+    margin-top: 10%;
+
+    span{
+        color:white ;
+    font-size: 16px;
+    font-family: 'Poppins SemiBold';
+    }
+}
+
+.last-text{
+    font-size: 12px;
+    font-family: 'Poppins Medium';
+    color: #4A3D43;
+    text-align: center;
+    margin-top: 10%;
+
+    span{
+        font-size: 12px;
+        font-family: 'Poppins SemiBold';
+        color: #4A3D43;
+    }
+}
+
+//////////////  MODAL ////////////////
+
+.close-cross{
+    height: 13px;
+    width: 13px;
+}
+
+.modal-title{
+    font-size: 18px;
+    font-family: 'Poppins SemiBold';
+    color: #27323C;
+    margin-left: 5%;
+}
+
+.add-visa{
+    border:1px solid #FD56A6 ;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    height: 66px;
+}
+
+.grey-title{
+    color: #ACA6A9;
+    font-family: 'Poppins Medium';
+    font-size: 14px;
+}
+
+.pink-text{
+    color: #EF3890;
+    font-size: 13px;
+    font-family: 'Poppins Medium';
+}
+
+.title-input{
+    display: flex;
+    align-items: center;
+}
+
+.visa-num-icon{
+    // width: 90%;
+    // margin-left: 5%;
+    height: 48px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #ACA6A9;
+    width: 100%;
+}
+
+.visa-info-content{
+    // border: 1px solid #ACA6A9;
+    // border-radius: 10px;
+    // height: 96px;
+    width: 90%;
+    margin-left: 5%;
+    padding: 0;
+}
+
+.visa-date{
+    border-right: 1px solid #ACA6A9;
+    border-bottom-left-radius: 10px; 
+    width: 50%;
+    
+}
+
+.visa-cvc{
+    border-bottom-right-radius: 10px;
+    border-right: 1px solid #ACA6A9;
+    width: 50%;
+}
+
+.last-item{
+    border: 1px solid #ACA6A9;
+    height: 69px;
+    width: 100%;
+    border-radius: 10px;
+}
+

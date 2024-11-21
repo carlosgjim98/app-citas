@@ -9,9 +9,10 @@ import { Camera, CameraResultType } from '@capacitor/camera';
 import { PushNotifications } from '@capacitor/push-notifications';
 import { ActionSheetController } from '@ionic/angular';
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.page.html',
-  styleUrls: ['./profile.page.scss'],
+    selector: 'app-profile',
+    templateUrl: './profile.page.html',
+    styleUrls: ['./profile.page.scss'],
+    standalone: false
 })
 export class ProfilePage implements OnInit {
 

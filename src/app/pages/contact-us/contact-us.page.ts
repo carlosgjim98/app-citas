@@ -6,9 +6,10 @@ import { UtilitiesService } from 'src/app/services/utilities.service';
 import { codeErrors } from 'src/app/utils/utils';
 
 @Component({
-  selector: 'app-contact-us',
-  templateUrl: './contact-us.page.html',
-  styleUrls: ['./contact-us.page.scss'],
+    selector: 'app-contact-us',
+    templateUrl: './contact-us.page.html',
+    styleUrls: ['./contact-us.page.scss'],
+    standalone: false
 })
 export class ContactUsPage implements OnInit {
 

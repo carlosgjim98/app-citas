@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <div class="custom-header">
+      <div class="header-content">
+        <ion-button class="back-button" fill="solid" (click)="goBack()">
+          <ion-icon class="icono" slot="start" src="../../../assets/icons/Icon ionic-ios-arrow-forward.svg"></ion-icon>
+        </ion-button>
+        <div class="header-center">
+          <p class="header-title">Confirmar cita</p>
+        </div>
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="date-card">
+    <h1>Información de la cita</h1>
+    <div class="date-details">
+      <div class="date-item">
+        <ion-icon src="assets/icons/calendar event.svg"></ion-icon>
+        <p>10 de Noviembre 2024</p>
+      </div>
+      <div class="date-item">
+        <ion-icon src="assets/icons/time.svg"></ion-icon>
+        <p>9:30 P.M</p>
+      </div>
+      <div class="date-item">
+        <ion-icon src="assets/icons/location-outline.svg"></ion-icon>
+        <p>Restaurante Nombre, Ciudad, 11400, Cádiz</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="user-card" *ngFor="let user of users">
+    <h1>Información de tu acompañante</h1>
+    <div class="user-details">
+      
+      <div class="profile-image">
+        <ion-avatar>
+          <ion-icon [src]="user.profilePicture || 'assets/icons/Enmascarar grupo 1.svg'" alt="Profile Image" class="user-icon"></ion-icon>
+        </ion-avatar>
+      </div>
+      <div class="user-info">
+        <h2>{{ user.name }}</h2>
+        <!-- Barra de compatibilidad y porcentaje -->
+        <div class="compatibility-bar-container">
+          <div class="compatibility-bar">
+            <div class="progress" [style.width.%]="user.compatibility"></div>
+          </div>
+          <p class="compatibility">{{ user.compatibility }}% compatibles</p>
+        </div>
+        <p class="description">Respondisteis lo mismo en {{ user.questions }} preguntas</p>
+      </div>
+    </div>
+  </div>
+
+  <ion-button  class="submit-button"  routerLink="/suscripcion">
+    Confirmar y continuar
+  </ion-button>
+  
+</ion-content>

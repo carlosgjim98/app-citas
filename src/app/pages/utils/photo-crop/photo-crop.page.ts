@@ -7,9 +7,10 @@ import { AuthenticationService } from 'src/app/services/authentication.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-photo-crop',
-  templateUrl: './photo-crop.page.html',
-  styleUrls: ['./photo-crop.page.scss'],
+    selector: 'app-photo-crop',
+    templateUrl: './photo-crop.page.html',
+    styleUrls: ['./photo-crop.page.scss'],
+    standalone: false
 })
 export class PhotoCropPage implements OnInit {
 

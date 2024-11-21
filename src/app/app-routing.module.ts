@@ -4,95 +4,133 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./pages/cover-page/cover-page.module').then( m => m.CoverPagePageModule)
+    loadChildren: () => import('./pages/cover-page/cover-page.module').then(m => m.CoverPagePageModule)
   },
   {
     path: 'tabs',
-    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
+    loadChildren: () => import('./pages/tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
     path: 'cover-page',
-    loadChildren: () => import('./pages/cover-page/cover-page.module').then( m => m.CoverPagePageModule)
+    loadChildren: () => import('./pages/cover-page/cover-page.module').then(m => m.CoverPagePageModule)
   },
   {
     path: 'chats',
-    loadChildren: () => import('./pages/chats/chats.module').then( m => m.ChatsPageModule)
+    loadChildren: () => import('./pages/chats/chats.module').then(m => m.ChatsPageModule)
   },
   {
     path: 'forgot-password',
-    loadChildren: () => import('./pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+    loadChildren: () => import('./pages/forgot-password/forgot-password.module').then(m => m.ForgotPasswordPageModule)
   },
   {
     path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
   },
   {
     path: 'idiomas',
-    loadChildren: () => import('./pages/idiomas/idiomas.module').then( m => m.IdiomasPageModule)
+    loadChildren: () => import('./pages/idiomas/idiomas.module').then(m => m.IdiomasPageModule)
   },
   {
     path: 'interior-chat',
-    loadChildren: () => import('./pages/interior-chat/interior-chat.module').then( m => m.InteriorChatPageModule)
+    loadChildren: () => import('./pages/interior-chat/interior-chat.module').then(m => m.InteriorChatPageModule)
   },
   {
     path: 'interior-chat/:chat_id',
-    loadChildren: () => import('./pages/interior-chat/interior-chat.module').then( m => m.InteriorChatPageModule)
+    loadChildren: () => import('./pages/interior-chat/interior-chat.module').then(m => m.InteriorChatPageModule)
   },
   { 
     path: 'interior-chat/:id_chat/:nombre_chat/:ultimo_mensaje', 
     //canActivate: [AuthGuard], 
-    loadChildren: () => import('./pages/interior-chat/interior-chat.module').then(m => m.InteriorChatPageModule) },
+    loadChildren: () => import('./pages/interior-chat/interior-chat.module').then(m => m.InteriorChatPageModule) 
+  },
   {
     path: 'login',
-    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./pages/login/login.module').then(m => m.LoginPageModule)
   },
   {
     path: 'profile',
-    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+    loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfilePageModule)
   },
   {
     path: 'register',
-    loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
+    loadChildren: () => import('./pages/register/register.module').then(m => m.RegisterPageModule)
   },
   {
     path: 'test-plugins',
-    loadChildren: () => import('./pages/test-plugins/test-plugins.module').then( m => m.TestPluginsPageModule)
+    loadChildren: () => import('./pages/test-plugins/test-plugins.module').then(m => m.TestPluginsPageModule)
   },
   {
     path: 'photo-crop',
-    loadChildren: () => import('./pages/utils/photo-crop/photo-crop.module').then( m => m.PhotoCropPageModule)
+    loadChildren: () => import('./pages/utils/photo-crop/photo-crop.module').then(m => m.PhotoCropPageModule)
   },
   {
     path: 'image-view',
-    loadChildren: () => import('./pages/utils/image-view/image-view.module').then( m => m.ImageViewPageModule)
+    loadChildren: () => import('./pages/utils/image-view/image-view.module').then(m => m.ImageViewPageModule)
   },
   {
     path: 'calendar',
-    loadChildren: () => import('./pages/calendar/calendar.module').then( m => m.CalendarPageModule)
+    loadChildren: () => import('./pages/calendar/calendar.module').then(m => m.CalendarPageModule)
   },
   {
     path: 'reminder',
-    loadChildren: () => import('./pages/reminder/reminder.module').then( m => m.ReminderPageModule)
+    loadChildren: () => import('./pages/reminder/reminder.module').then(m => m.ReminderPageModule)
   },
   {
     path: 'configuration',
-    loadChildren: () => import('./pages/configuration/configuration.module').then( m => m.ConfigurationPageModule)
+    loadChildren: () => import('./pages/configuration/configuration.module').then(m => m.ConfigurationPageModule)
   },
   {
     path: 'privacy-policy',
-    loadChildren: () => import('./pages/privacy-policy/privacy-policy.module').then( m => m.PrivacyPolicyPageModule)
+    loadChildren: () => import('./pages/privacy-policy/privacy-policy.module').then(m => m.PrivacyPolicyPageModule)
   },
   {
     path: 'eulas',
-    loadChildren: () => import('./pages/eulas/eulas.module').then( m => m.EulasPageModule)
+    loadChildren: () => import('./pages/eulas/eulas.module').then(m => m.EulasPageModule)
   },
   {
     path: 'terms',
-    loadChildren: () => import('./pages/terms/terms.module').then( m => m.TermsPageModule)
+    loadChildren: () => import('./pages/terms/terms.module').then(m => m.TermsPageModule)
   },
   {
     path: 'contact-us',
-    loadChildren: () => import('./pages/contact-us/contact-us.module').then( m => m.ContactUsPageModule)
+    loadChildren: () => import('./pages/contact-us/contact-us.module').then(m => m.ContactUsPageModule)
+  },
+  {
+    path: 'formulario',
+    loadChildren: () => import('./pages/formulario/formulario.module').then(m => m.FormularioPageModule)
+  },
+  {
+    path: 'resultados',
+    loadChildren: () => import('./pages/resultados/resultados.module').then(m => m.ResultadosPageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./pages/inicio/inicio.module').then(m => m.InicioPageModule)
+  },
+  {
+    path: 'suscripcion',
+
+    loadChildren: () => import('./pages/suscripcion/suscripcion.module').then(m => m.SuscripcionPageModule)
+  },
+  {
+    path: 'seleccion-fecha-resultados',
+    loadChildren: () => import('./pages/seleccion-fecha-resultados/seleccion-fecha-resultados.module').then( m => m.SeleccionFechaResultadosPageModule)
+  },
+  {
+    path: 'confirmar-cita',
+    loadChildren: () => import('./pages/confirmar-cita/confirmar-cita.module').then( m => m.ConfirmarCitaPageModule)
+  },
+{
+    loadChildren: () => import('./pages/suscripcion/suscripcion.module').then( m => m.SuscripcionPageModule)
+  },
+  {
+    path: 'mis-citas',
+    loadChildren: () => import('./pages/mis-citas/mis-citas.module').then( m => m.MisCitasPageModule)
+  },
+  {
+    path: 'detalle-cita',
+    loadChildren: () => import('./pages/detalle-cita/detalle-cita.module').then( m => m.DetalleCitaPageModule)
+
   }
 
 
@@ -100,6 +138,7 @@ const routes: Routes = [
   
 
 ];
+
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })

@@ -11,9 +11,10 @@ import { es } from 'date-fns/locale';
 import { ReminderPage } from '../reminder/reminder.page';
 
 @Component({
-  selector: 'app-calendar',
-  templateUrl: './calendar.page.html',
-  styleUrls: ['./calendar.page.scss'],
+    selector: 'app-calendar',
+    templateUrl: './calendar.page.html',
+    styleUrls: ['./calendar.page.scss'],
+    standalone: false
 })
 export class CalendarPage implements OnInit {
 
