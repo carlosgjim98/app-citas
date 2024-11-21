@@ -1,6 +1,87 @@
-ion-avatar{
-    width: 125px;
-    height: 125px;
-    margin:0 auto;
-    margin-bottom: 10px;
+.header-content{
+    display: flex;
+    background: #F5F5F5;
+}
+
+.image-content{
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 33%;
+}
+
+.image-header{
+    height: 103px;
+    width: 103px;
+}
+
+.name{
+    color: #00191A;
+    font-family: 'Poppins SemiBold';
+    font-size: 20px;
+}
+
+.bell-button{
+    height: 41px;
+    width: 41px;
+    --background: white;
+    min-height: 41px;
+    min-width: 41px;  
+    position: absolute;
+    margin-left: 87%;
+    margin-top: 16%;
+}
+
+.bell{
+   height: 28px;
+   width: 28px; 
+   min-height: 28px;
+   min-width: 28px;
+   margin-left: 0px;
+}
+
+.circle-badge{
+    height: 18px;
+    width: 18px;
+    min-height: 18px;
+    min-width: 18px;
+    border-radius: 50%;
+    background: #FD56A6;
+    color: white;
+    font-size: 7px;
+    font-family: 'Poppins Regular';
+    position: absolute;
+    align-content: center;
+    margin-bottom: 18px;
+    margin-left: 18px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    border-radius: 10px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.card-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.pink-icon{
+    height: 28px;
+    width: 28px;
+}
+
+.card-text{
+    font-size: 15px;
+    font-family: 'Poppins Medium';
+    color: #2C252B;
 }

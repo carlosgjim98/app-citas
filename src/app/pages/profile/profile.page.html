@@ -1,34 +1,92 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Perfil</ion-title>
+  <div class="header-content">
+    <div class="image-content">
+      <img class="image-header" src="../../../assets/imgs/Elipse_379@3x.png" alt="">
+      <p class="name">Carlos Suarez</p>
+    </div>
+    <ion-button class="bell-button">
+      <ion-icon class="bell" src="../../../assets/icons/bell.svg"></ion-icon>
+      <ion-badge class="circle-badge">99</ion-badge>
+    </ion-button>
 
-    <ion-buttons slot="end" routerLink="/configuration">
-      <ion-icon name="cog-outline"></ion-icon>
-    </ion-buttons>
-  </ion-toolbar>
+
+  </div>
+
 </ion-header>
 
-<app-loading [text]="'Cargando perfil...'" *ngIf="isLoading"></app-loading>
 
-<ion-content class="ion-padding" *ngIf="!isLoading">
-  <ion-avatar>
-    <img [src]="user?.avatar" (click)="adjuntarImagen()">
-  </ion-avatar>
+<ion-content class="ion-padding">
 
-  <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
-    <ion-item>
-      <ion-input clearInput type="text" placeholder="Nombre de usuario" formControlName="name" required>
-        <ion-icon slot="start" name="person-outline"></ion-icon>
-      </ion-input>
-    </ion-item>
-    
-    <ion-item>
-      <ion-input clearInput type="email" placeholder="Email" formControlName="email" required>
-        <ion-icon slot="start" name="mail-outline"></ion-icon>
-      </ion-input>
-    </ion-item>
-    <ion-button expand="block" type="submit" [disabled]="!form.valid">Guardar cambios</ion-button>
-    <ion-button expand="block" type="button" (click)="auth.logout()">Cerrar sesión</ion-button>
-  </form>
+
+
+<div>
+  <div class="card" routerLink="/configurar-mis-datos">
+    <div class="card-body">
+      <ion-icon class="pink-icon" src="../../../assets/icons/settings.svg"></ion-icon>
+      <p class="card-text">Configurar mis datos</p>
+    </div>
+      <ion-icon src="../../../assets/icons/Icon_ionic-ios-arrow-forward_pink.svg"></ion-icon>
+  </div>
+
+  <div class="card" routerLink="/formulario-de-compatibilidad">
+    <div class="card-body">
+      <ion-icon class="pink-icon" src="../../../assets/icons/Grupo_12327.svg"></ion-icon>
+      <p class="card-text">Formulario de compatibilidad</p>
+    </div>
+      <ion-icon src="../../../assets/icons/Icon_ionic-ios-arrow-forward_pink.svg"></ion-icon>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <ion-icon class="pink-icon" src="../../../assets/icons/crown.svg"></ion-icon>
+      <p class="card-text">Mi suscripción</p>
+    </div>
+      <ion-icon src="../../../assets/icons/Icon_ionic-ios-arrow-forward_pink.svg"></ion-icon>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <ion-icon class="pink-icon" src="../../../assets/icons/user_x.svg"></ion-icon>
+      <p class="card-text">Usuarios bloqueados</p>
+    </div>
+      <ion-icon src="../../../assets/icons/Icon_ionic-ios-arrow-forward_pink.svg"></ion-icon>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <ion-icon class="pink-icon" src="../../../assets/icons/lock.svg"></ion-icon>
+      <p class="card-text">Política de Privacidad</p>
+    </div>
+      <ion-icon src="../../../assets/icons/Icon_ionic-ios-arrow-forward_pink.svg"></ion-icon>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <ion-icon class="pink-icon" src="../../../assets/icons/phone_lock.svg"></ion-icon>
+      <p class="card-text">Condiciones de Venta</p>
+    </div>
+      <ion-icon src="../../../assets/icons/Icon_ionic-ios-arrow-forward_pink.svg"></ion-icon>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <ion-icon class="pink-icon" src="../../../assets/icons/file_text.svg"></ion-icon>
+      <p class="card-text">EULA</p>
+    </div>
+      <ion-icon src="../../../assets/icons/Icon_ionic-ios-arrow-forward_pink.svg"></ion-icon>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <ion-icon class="pink-icon" src="../../../assets/icons/logout_circle.svg"></ion-icon>
+      <p class="card-text">Cerrar sesión</p>
+    </div>
+      <ion-icon src="../../../assets/icons/Icon_ionic-ios-arrow-forward_pink.svg"></ion-icon>
+  </div>
+
+
+</div>
+
+
 
 </ion-content>
