@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65" viewBox="0 0 65 65">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Elipse_425" data-name="Elipse 425" cx="32.5" cy="32.5" r="32.5" transform="translate(32 277)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_1" data-name="Enmascarar grupo 1" transform="translate(-32 -277)" clip-path="url(#clip-path)">
+    <g id="user" transform="translate(39.3 290.795)">
+      <path id="Trazado_48590" data-name="Trazado 48590" d="M7.935,51.1c0-9.282,7.583-21.8,16.865-21.8S41.535,41.823,41.535,51.1ZM24.8,27.2A12.6,12.6,0,1,1,37.4,14.6,12.6,12.6,0,0,1,24.8,27.2Z" transform="translate(0.4 0.1)" fill="#fff"/>
+      <path id="Trazado_48591" data-name="Trazado 48591" d="M0,0H50.4V50.4H0Z" fill="none"/>
+    </g>
+  </g>
+</svg>

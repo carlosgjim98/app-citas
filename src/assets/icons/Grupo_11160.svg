@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="18" viewBox="0 0 28 18">
+  <g id="Grupo_11160" data-name="Grupo 11160" transform="translate(-372 -560)">
+    <g id="Rectángulo_19017" data-name="Rectángulo 19017" transform="translate(372 560)" fill="none" stroke="#dcdee2" stroke-width="0.5">
+      <rect width="28" height="18" rx="2" stroke="none"/>
+      <rect x="0.25" y="0.25" width="27.5" height="17.5" rx="1.75" fill="none"/>
+    </g>
+    <g id="XMLID_2_" transform="translate(374.614 560.874)">
+      <path id="XMLID_7_" d="M87.515,109.253h2.426a5.748,5.748,0,0,0,3.88-1.561,5.151,5.151,0,0,0,1.7-3.769,5.259,5.259,0,0,0-1.708-3.914,5.8,5.8,0,0,0-3.895-1.5h-2.38a5.3,5.3,0,0,0-5.412,5.417A5.367,5.367,0,0,0,87.515,109.253Zm4.334-5.383a4.3,4.3,0,1,1-4.3-4.3A4.3,4.3,0,0,1,91.849,103.87Z" transform="translate(-77.738 -95.534)" fill="#0064aa"/>
+      <path id="XMLID_10_" d="M164.141,133.76a2.938,2.938,0,0,0-1.882-2.736v5.471A2.933,2.933,0,0,0,164.141,133.76Z" transform="translate(-151.397 -125.424)" fill="#0064aa"/>
+      <path id="XMLID_11_" d="M113.04,133.76a2.931,2.931,0,0,0,1.88,2.734v-5.471A2.938,2.938,0,0,0,113.04,133.76Z" transform="translate(-106.155 -125.424)" fill="#0064aa"/>
+    </g>
+  </g>
+</svg>
