@@ -38,11 +38,30 @@
 @import "@ionic/angular/css/palettes/dark.system.css";
 
 
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+   font-family: 'Poppins Regular';
+   font-size: 15px;
+}
+
+.android-styleheader{
+    height: 80px !important;
+}
+
+.ios-styleheader{ 
+    height: 100px !important;
+}
+
 // ESTILOS PARA TODOS LOS ION TOOLBAR
 
 ion-toolbar{
-    --border-width: 0;
-    --border-color: transparent;
+    --border-width: 0 !important;
+    
+  --border-color: transparent;
     --background: transparent;
     --padding-start: 16px;
     --padding-end: 16px;
@@ -67,9 +86,19 @@ ion-toolbar{
 // ESTILOS PARA TODOS LOS BOTONES "EN PRINCIPIO" -- PARA CAMBIAR ESTILOS, CAMBIARLO EN UNO EN CONCRETO CON ALGUNA CLASE
 
 ion-button{
-    --border-radius: var(--app-border-radius);
-    height: 48px;
+    --background: linear-gradient(to right, #EF3890, #F576B3);
+    font-family: "Poppins Regular";
+    width: 90%;
+    --border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
     text-transform: none;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    --box-shadow: none !important;
 }
 
 // ESTILOS PARA ITEMS Y INPUTS
@@ -86,7 +115,12 @@ ion-input{
     }
 }
 
+ion-content{
 
+    --background: #F5F5F5;
+    --border-width: 0 !important; 
+    --border-color: transparent;
+}
 
 
 // ESTILOS FULLCALENDAR

@@ -8,73 +8,37 @@
 }
 
 @font-face {
-  font-family: 'DMSans-Bold';
+  font-family: 'Poppins Medium';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/DMSans-Bold.ttf');
+  src: url('/assets/fonts/Poppins-Medium.ttf');
 }
 
 @font-face {
-  font-family: 'DMSans-ExtraBold';
+  font-family: 'Poppins Regular';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/DMSans-ExtraBold.ttf');
+  src: url('/assets/fonts/Poppins-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'DMSans-ExtraLight';
+  font-family: 'Poppins SemiBold';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/DMSans-ExtraLight.ttf');
+  src: url('/assets/fonts/Poppins-SemiBold.ttf');
 }
 
-@font-face {
-  font-family: 'DMSans-Light';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/DMSans-Light.ttf');
-}
-
-@font-face {
-  font-family: 'DMSans-Medium';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/DMSans-Medium.ttf');
-}
-
-
-@font-face {
-  font-family: 'DMSans-Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/DMSans-Regular.ttf');
-}
-
-
-@font-face {
-  font-family: 'DMSans-SemiBold';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/DMSans-SemiBold.ttf');
-}
-
-
-@font-face {
-  font-family: 'DMSans-Thin';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/DMSans-Thin.ttf');
-}
 
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #0054e9 !important;
+  --ion-color-primary: #EF3890 !important;
   --ion-color-primary-rgb: 56, 128, 255 !important;
   --ion-color-primary-contrast: #ffffff !important;
   --ion-color-primary-contrast-rgb: 255, 255, 255 !important;
   --ion-color-primary-shade: #3171e01f !important;
   --ion-color-primary-tint: #4c8eff34 !important;
+  --ion-font-family:  Poppins Regular !important;;
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff !important;
