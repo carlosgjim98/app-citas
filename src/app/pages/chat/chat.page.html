@@ -1,7 +1,7 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <div class="barra-busqueda-container">
-      <ion-searchbar placeholder="Buscar"></ion-searchbar>
+      <ion-searchbar search-icon="" placeholder="Buscar"></ion-searchbar>
     </div>
   </ion-toolbar>
 </ion-header>
@@ -10,7 +10,7 @@
 
   <ion-list>
     <!-- Iteramos sobre los mensajes -->
-    <ion-item *ngFor="let mensaje of mensajes">
+    <ion-item *ngFor="let mensaje of mensajes" lines="none">
       <ion-avatar slot="start">
         <img [src]="mensaje.foto" alt="Foto de {{ mensaje.nombre }}">
       </ion-avatar>

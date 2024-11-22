@@ -28,6 +28,7 @@ export class ProfilePage implements OnInit {
     public actionsheetCtrl: ActionSheetController
   ) { }
 
+  
   ngOnInit() {
     this.form = new FormGroup({
       name: new FormControl(''),

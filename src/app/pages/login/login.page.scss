@@ -1,79 +1,224 @@
-ion-content{
-    //background-size: cover;
-    //--background:url('/assets/imgs/base-background.jpg');
-
-    .title{
-        margin-top:16px;
-        margin-bottom: 32px;
-    }
-    ion-button{
-        text-transform: none;
-    }
-    .logo{
-        margin:0 auto;
-        z-index: 2;
-        margin-top:10vh;
-        img{
-            width: 130px;
-            height: 130px; 
-        }
-        
-    }
-
-    #socialLinks{
-        display: flex;
-        justify-content: space-evenly;
-        margin: 2vh 8vw 2vh 8vw;
-        //width: 85vw;
-
-        ion-icon{
-            font-size: 32px;
-        }
-        #facebook{
-            --color: white;
-            --background: #3b5998;
-            --background-activated: #4567b0;
-            --background-focused: #3b5998;
-
-            --border-radius: 50%;
-            height: 64px;
-            width: 64px;
-            margin : 0;
-            
-            
-        }
-        #google{
-            --background: white;
-            --background-activated: rgb(235, 235, 235);
-            --background-focused: white;
-            --border-radius: 50%;
-            border-radius: 50%;
-            box-shadow: 0px 0px 10px 3px #0000000a;
-            height: 64px;
-            width: 64px;
-            margin : 0;
-
-
-        }
-
-        .fa-google {
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            -webkit-text-fill-color: transparent;
-          }
-
-        #apple{
-            --background: #868686;
-            --background-activated: #909090;
-            --background-focused: #868686;
-            --color: white;
-            --border-radius: 50%;
-            height: 64px;
-            width: 64px;
-            margin : 0;
-
-        }
-    }
+.android-styleheader {
+  height: 80px !important;
 }
 
+.ios-styleheader {
+  height: 100px !important;
+}
+
+.header-background {
+  background-image: url('/assets/imgs/pattern-jose3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.content-top {
+  height: 50vh;
+  width: 100%;
+}
+
+.login {
+  background-color: #ffffff !important;
+  border-radius: 10px;
+  position: fixed;
+  margin: 60% 16px;
+  padding: 20px;
+  z-index: 10;
+  width: 91.5%;
+}
+
+.titulos {
+  position: fixed;
+  z-index: 10;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+  width: 100%;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: 'Poppins SemiBold';
+}
+
+.subtitle {
+  font-size: 17px;
+  color: #ffffff;
+  font-family: 'Poppins Regular';
+}
+
+
+.custom-item {
+  --border-width: 0;
+  --box-shadow: none;
+  --border-radius: 8px;
+  --padding-start: 10px;
+  --inner-padding-end: 0;
+  --min-height: 50px;
+  margin-bottom: 12px;
+  background-color: #fff;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+}
+.credential-icon{
+
+  height: 13px;
+  width: 13px;
+}
+
+/* Color predeterminado del ícono */
+.custom-item .credential-icon {
+  color: #838383; /* Color gris cuando no está seleccionado */
+  transition: color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+/* Color del ícono cuando el input está enfocado */
+.custom-item:focus-within .credential-icon {
+  color: #EF3890; /* Color rosa intenso cuando el campo está seleccionado */
+}
+
+.custom-item:focus-within {
+  border: 1px solid #f576b3;
+}
+
+
+
+.icon-input {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.custom-item ion-input::part(native):-moz-placeholder {
+
+  font-family: Poppins Regular !important;
+}
+.custom-item ion-input::part(native)::placeholder {
+  
+  font-family: Poppins Regular !important;
+}
+.custom-item ion-input::part(native)::-webkit-input-placeholder {
+  font-family: Poppins Regular !important;
+}
+
+ion-input::part(native) {
+  font-size: 16px;
+  color: #333;
+  margin-left: 15px;
+  font-family: Poppins Regular !important;
+}
+
+
+.forgot-password{
+
+  margin-top: 19px;
+  text-decoration: underline;
+  color: #292426;
+  font-size: 15px;
+  font-family: Poppins Medium;
+}
+
+.entrar{
+  
+  --background: linear-gradient(90deg, #EF3890, #F576B3); 
+  margin-top: 38px ;
+}
+.container-a {
+  display: flex;
+  align-items: center;
+  margin-top: 23px;
+  margin: 15px 0 25px;
+  gap: 5px;
+  width: 100%;
+}
+
+.politicas {
+  font-family: 'Poppins Regular';
+  font-size: 13px;
+  margin: 0;
+  margin-left: 6px;
+  line-height: 1.5;
+  color: #2E2D2E;
+  cursor: pointer;
+}
+
+.politicas-link {
+  color: #2E2D2E;
+  font-size: 14px;
+  font-family: 'Poppins SemiBold';
+
+}
+
+ion-checkbox {
+  --size: 20px;
+  --checkbox-background-checked: #EF3890;
+  --checkmark-width: 3px;
+  --checkmark-color: white;
+}
+
+ion-checkbox::part(container) {
+  border-radius: 2px;
+  border: 1px solid #EF3890;
+}
+
+.container-btn {
+  padding-top: 12px;
+}
+
+ion-button {
+  height: 57px !important;
+  width: 100%;
+}
+
+.goLogin {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+//BACKBUTTON
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 34px !important;
+}
+
+.custom-back-button {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-icon {
+  font-size: 40px;
+  position: absolute;
+  z-index: 1;
+}
+
+.foreground-icon {
+  font-size: 15px;
+  z-index: 2;
+}
+
+//FIN BACKBUTTON

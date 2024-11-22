@@ -1,0 +1,161 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="button-container">
+      <ion-buttons slot="start">
+        <ion-button class="return-btn" fill="solid"  (click)="goBack()">
+          <ion-icon class="icono" slot="start" src="../../../assets/icons/arrow-to-down-right-svgrepo-com.svg"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      
+      <ion-item lines="none" class="user-info">
+        <ion-avatar slot="start">
+          <img [src]="chatAvatar" alt="Foto de {{ chatName }}">
+        </ion-avatar>
+        <ion-label class="message-label">
+          <div class="name-time-container">
+            <h2>{{ chatName }}</h2>
+            <p class="time">Conectado</p>
+          </div>
+        </ion-label>
+      </ion-item>
+    </div>
+    
+    <ion-buttons class= " end-button" slot="end"  (click)="openModal()" >
+      <ion-button class= "tres-puntos">
+      <ion-icon  src="assets/icons/ajustes-chat.svg" ></ion-icon>
+    </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+   <div class=" fondo">
+
+    <img src="assets/imgs/fondo-chat.png" alt="imagen de fondo">
+  </div> 
+
+  <div class="day-container"> <!-- Contenedor agregado -->
+    <div class="day">Hoy</div>
+  </div>
+
+  <div class="messages-container">
+    <!-- Mensaje del contacto -->
+    <div class="message contact-message">
+      <p class="message-text">Hola, buenos días!</p>
+      <span class="message-time">10:04</span>
+    </div>
+
+    <!-- Mensaje del usuario -->
+    <div class="message user-message">
+      <p class="message-text">Hola, buenos días!<br>¡Me lo pasé genial en la cena de ayer!</p>
+      <span class="message-time-user">10:04</span>
+    </div>
+
+    <!-- Mensaje con imagen -->
+    <div class="message contact-message">
+      <p class="message-text">Yo también!</p>
+      <span class="message-time">10:04</span>
+    </div>
+    
+  </div>
+  <ion-footer>
+    <ion-toolbar class="footer-toolbar">
+      <ion-item lines="none" class="input-container">
+        <!-- Campo de entrada de texto para el mensaje -->
+        <ion-input placeholder="Enviar un mensaje..."></ion-input>
+        
+        <!-- Botón de enviar mensaje -->
+        <ion-button shape="round" class="send-button" >
+          <ion-icon slot="icon-only" src="assets/icons/send-plane2.svg"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </ion-toolbar>
+  </ion-footer>
+
+  <ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]" [isOpen]="isModalOpen" (ionModalDidDismiss)="isModalOpen = false">
+    <ng-template>
+  
+      <ion-buttons slot="end">
+        <ion-button (click)="closeModal()">
+          <ion-icon src="assets/icons/close-outline.svg"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+        <div class="options">
+          <h1>Bloquear</h1>
+          <div class="separator"></div> 
+          <h1 (click)="openReportModal()">Reportar mensaje</h1> <!-- Cambiado para abrir el segundo modal -->
+        </div>
+    
+    </ng-template>
+  </ion-modal>
+  
+  <!-- Segundo Modal -->
+<ion-modal class="report-modal" [isOpen]="isReportModalOpen" (ionModalDidDismiss)="isReportModalOpen = false">
+  <ng-template>
+
+  
+    <div class="report-container" >
+
+      <ion-buttons class="close-button">
+        <ion-button (click)="closeReportModal()">
+          <ion-icon name="close"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <div class="report-title">
+        <h1>Reportar mensajes</h1>
+        
+      </div>
+     
+        <p>Indica que quieres reportar</p>
+        <ion-list>
+          <ion-item>
+            <ion-checkbox slot="start" [(ngModel)]="desnudosChecked"></ion-checkbox>
+            <ion-label>Desnudos o actividad sexual</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox slot="start" [(ngModel)]="odioChecked"></ion-checkbox>
+            <ion-label>Lenguaje o símbolos que incitan al odio</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox slot="start" [(ngModel)]="estafaChecked"></ion-checkbox>
+            <ion-label>Estafa o fraude</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox slot="start" [(ngModel)]="violenciaChecked"></ion-checkbox>
+            <ion-label>Violencia u organizaciones peligrosas</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox slot="start" [(ngModel)]="ventaIlegalChecked"></ion-checkbox>
+            <ion-label>Venta de bienes ilegales o regulados</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox slot="start" [(ngModel)]="bullyingChecked"></ion-checkbox>
+            <ion-label>Bullying o acoso</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox slot="start" [(ngModel)]="infraccionChecked"></ion-checkbox>
+            <ion-label>Infracción de la propiedad intelectual</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox slot="start" [(ngModel)]="suicidioChecked"></ion-checkbox>
+            <ion-label>Suicidio o autolesiones</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox slot="start" [(ngModel)]="spamChecked"></ion-checkbox>
+            <ion-label>Spam</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox slot="start" [(ngModel)]="problemaNoListaChecked"></ion-checkbox>
+            <ion-label>El problema no aparece en la lista</ion-label>
+          </ion-item>
+        </ion-list>
+      
+
+      <button class="submit-button"expand="full" (click)="submitReport()">Enviar Reporte</button>
+    </div>
+  </ng-template>
+</ion-modal>
+
+
+</ion-content>

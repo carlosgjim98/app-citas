@@ -121,6 +121,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/confirmar-cita/confirmar-cita.module').then( m => m.ConfirmarCitaPageModule)
   },
 {
+  path: 'suscripcion',
     loadChildren: () => import('./pages/suscripcion/suscripcion.module').then( m => m.SuscripcionPageModule)
   },
   {
@@ -138,8 +139,17 @@ const routes: Routes = [
   },
   {
     path: 'configurar-mis-datos',
-    loadChildren: () => import('./pages/configurar-mis-datos/configurar-mis-datos.module').then( m => m.ConfigurarMisDatosPageModule)
-  }
+    loadChildren: () => import('./pages/configurar-mis-datos/configurar-mis-datos.module').then(m => m.ConfigurarMisDatosPageModule)
+  },
+  {
+    path: 'mensajes-chat',
+    loadChildren: () => import('./pages/mensajes-chat/mensajes-chat.module').then( m => m.MensajesChatPageModule)
+  },  {
+    path: 'condiciones-venta',
+    loadChildren: () => import('./pages/condiciones-venta/condiciones-venta.module').then( m => m.CondicionesVentaPageModule)
+  },
+
+
 
 
 
