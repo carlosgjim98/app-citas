@@ -30,9 +30,11 @@
     </ion-item>
 
     <ion-item class="custom-item">
-      <div class="icon-input" slot="start"
-        [ngClass]="{'icon-email-selected': isEmailFocused, 'icon-email': !isEmailFocused}">
-      </div>
+      <div 
+  class="icon-input" 
+  slot="start" 
+  [ngClass]="{'icon-email-selected': isEmailFocused, 'icon-email': !isEmailFocused}">
+</div>
       <ion-input clearInput type="email" placeholder="{{ 'REGISTER.EMAIL' | translate }}" formControlName="email"
         required (click)="onFocus('email')" (blur)="onFocus('')">
       </ion-input>
@@ -42,11 +44,10 @@
       <div class="icon-input" slot="start"
         [ngClass]="{'icon-password-selected': isPasswordFocused, 'icon-password': !isPasswordFocused}">
       </div>
-      <ion-icon slot='end' class="icon-eye" *ngIf="typeInput == 'password'" name="eye-off"
-        (click)="changeType()"></ion-icon>
-      <ion-icon slot='end' class="icon-eye" *ngIf="typeInput == 'text'" name="eye" (click)="changeType()"></ion-icon>
+       
       <ion-input clearInput [type]="typeInput" placeholder="{{ 'REGISTER.PASSWORD' | translate }}"
         formControlName="password" required (click)="onFocus('password')" (blur)="onFocus('')">
+        <ion-input-password-toggle slot="end" color="secondary"></ion-input-password-toggle>
       </ion-input>
     </ion-item>
 
@@ -54,11 +55,10 @@
       <div class="icon-input" slot="start"
         [ngClass]="{'icon-confirm-password-selected': isConfirmPasswordFocused, 'icon-confirm-password': !isConfirmPasswordFocused}">
       </div>
-      <ion-icon slot='end' class="icon-eye" *ngIf="typeInput == 'password'" name="eye-off"
-        (click)="changeType()"></ion-icon>
-      <ion-icon slot='end' class="icon-eye" *ngIf="typeInput == 'text'" name="eye" (click)="changeType()"></ion-icon>
+       
       <ion-input clearInput type="password" placeholder="{{ 'REGISTER.CONFIRM_PASSWORD' | translate }}"
         formControlName="password_confirmation" required (click)="onFocus('confirmPassword')" (blur)="onFocus('')">
+        <ion-input-password-toggle slot="end" color="secondary"></ion-input-password-toggle>
       </ion-input>
     </ion-item>
 

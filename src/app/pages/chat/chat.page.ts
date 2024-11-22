@@ -50,7 +50,8 @@ export class ChatPage implements OnInit {
         tiempo: 'Hace 1 semana',
         nuevoMensaje: '',
         mensaje: 'Mario: ¡Hola! ¿Qué tal?',
-        tieneNuevo: false
+        tieneNuevo: false,
+        ruta: ['/mensajes-chat']
       },
       {
         nombre: 'Marta S.' ,

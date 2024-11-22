@@ -6,7 +6,7 @@
           <ion-icon class="icono" slot="start" src="../../../assets/icons/Icon ionic-ios-arrow-forward.svg"></ion-icon>
         </ion-button>
         <div class="header-center">
-         
+
         </div>
         <ng-content></ng-content>
       </div>
@@ -22,48 +22,47 @@
       Selecciona uno de los perfiles afines a ti para mantener tu próxima cita
     </p>
   </div>
-  <div  class="ion-padding">
+  <div class="ion-padding">
 
-  <!-- Tarjetas de usuario -->
-  <div class="users">
-    <div class="user-card" *ngFor="let user of users">
-      <div class="user-details">
-        <div class="profile-image">
-          <ion-avatar>
-            <ion-icon [src]="user.profilePicture || 'assets/icons/Enmascarar grupo 1.svg'" alt="Profile Image" class="user-icon"></ion-icon>
-          </ion-avatar>
-        </div>
-        <div class="user-info">
-          <h2>{{ user.name }}</h2>
-          <!-- Barra de compatibilidad y porcentaje -->
-          <div class="compatibility-bar-container">
-            <div class="compatibility-bar">
-              <div class="progress" [style.width.%]="user.compatibility"></div>
-            </div>
-            <p class="compatibility">{{ user.compatibility }}% compatibles</p>
+    <!-- Tarjetas de usuario -->
+    <div class="users">
+      <div class="user-card" *ngFor="let user of users">
+        <div class="user-details">
+          <div class="profile-image">
+            <ion-avatar>
+              <ion-icon [src]="user.profilePicture || 'assets/icons/Enmascarar grupo 1.svg'" alt="Profile Image"
+                class="user-icon"></ion-icon>
+            </ion-avatar>
           </div>
-          <p class="description">Respondisteis lo mismo en {{ user.questions }} preguntas</p>
+          <div class="user-info">
+            <h2>{{ user.name }}</h2>
+            <!-- Barra de compatibilidad y porcentaje -->
+            <div class="compatibility-bar-container">
+              <div class="compatibility-bar">
+                <div class="progress" [style.width.%]="user.compatibility"></div>
+              </div>
+              <p class="compatibility">{{ user.compatibility }}% compatibles</p>
+            </div>
+            <p class="description">Respondisteis lo mismo en {{ user.questions }} preguntas</p>
+          </div>
         </div>
-      </div>
-      <ion-button 
-      class="select-button" 
-      
-      (click)="selectUser(user)"
-      [ngClass]="selectedUser === user ? 'selected' : 'unselected'">
-      <ion-icon src="assets/icons/Grupo 12215.svg" alt="Grupo 12215" style="width: 27px; height: 14px; margin-right: 9px;"></ion-icon>
-      {{ selectedUser === user ? 'Usuario seleccionado' : 'Seleccionar usuario' }}
-    </ion-button>
-    
-    
-    </div>
-  </div>
-  
-  
+        <ion-button class="select-button" (click)="selectUser(user)"
+          [ngClass]="selectedUser === user ? 'selected' : 'unselected'">
+          <ion-icon src="assets/icons/Grupo 12215.svg" alt="Grupo 12215"
+            style="width: 27px; height: 14px; margin-right: 9px; color: aquamarine;"></ion-icon>
+          {{ selectedUser === user ? 'Usuario seleccionado' : 'Seleccionar usuario' }}
+        </ion-button>
 
-  <!-- Botón de acción -->
-  <ion-button  class="submit-button"  routerLink="/suscripcion">
-    Aceptar y continuar
-  </ion-button>
-</div>
+
+      </div>
+    </div>
+
+
+
+    <!-- Botón de acción -->
+    <ion-button class="submit-button" routerLink="/suscripcion">
+      Aceptar y continuar
+    </ion-button>
+  </div>
 
 </ion-content>
