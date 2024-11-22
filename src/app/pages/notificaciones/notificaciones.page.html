@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <div class="custom-header">
+      <div class="header-content">
+        <ion-button class="back-button" fill="solid" (click)="goBack()">
+          <ion-icon class="icono" slot="start" src="../../../assets/icons/Icon ionic-ios-arrow-forward.svg"></ion-icon>
+        </ion-button>
+        <div class="header-center">
+          <p class="header-title">Notificaciones</p>
+        </div>
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="card-content-1">
+    <div class="all-text-1">
+      <p class="text-1">
+        Tienes una reserva de cita pendiente de confirmar. 
+        <span class="highlight">Pulsa aquí para ver más.</span>
+      </p>
+
+      <p class="time-1">
+        Hace 1 hora
+      </p>
+    </div>
+  </div>
+
+  <div class="card-content">
+    <div class="all-text">
+      <p class="text">
+        Has recibido un nuevo mensaje. 
+        <span class="highlight">Pulsa aquí para ver más.</span>
+      </p>
+
+      <p class="time">
+        Hace 2 horas
+      </p>
+    </div>
+  </div>
+
+  <div class="card-content">
+    <div class="all-text">
+      <p class="text">
+        Has recibido un nuevo mensaje. 
+        <span class="highlight">Pulsa aquí para ver más.</span>
+      </p>
+
+      <p class="time">
+        Hace 2 horas
+      </p>
+    </div>
+  </div>
+  
+</ion-content>
+

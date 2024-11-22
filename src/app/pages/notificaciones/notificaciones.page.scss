@@ -1,0 +1,146 @@
+ion-header{
+
+
+
+    .custom-toolbar {
+        --background: #F5F5F5;
+        padding: 10px 15px; 
+      
+        
+       
+      }
+      
+        .custom-header {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          position: relative;
+          padding: 0 15px;
+        }
+        
+      
+      
+        .header-content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between; 
+          width: 100%;
+          position: relative; 
+        }
+      
+      .back-button {
+        width: 40px; 
+        height: 40px; 
+        min-height: unset; 
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left:-30px;
+        --background:#EF3890;
+    
+        border-radius: 10px;
+      }
+      
+      .icono {
+        height: 15px;
+        width: 15px;
+        background-color: #ef3890;
+        
+       
+      }
+
+      
+      
+      .header-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); 
+        text-align: center;
+        top: 50%; 
+        transform: translate(-50%, -50%); 
+      }
+      
+      .header-title {
+        color: #00191A;
+        font-size: 15px;
+        font-family: Poppins Medium;
+        margin-left: 10px;
+        margin-top: 30px;
+        white-space: nowrap;
+      
+      }
+    }
+
+    .card-content{
+        height: 110px;
+        width: 100%;
+        background:#FFFFFF;
+        border-radius: 10px;
+        margin-top: 5%;
+        box-shadow: 0 3px 6px #CECECE73;
+        
+    }
+    
+    .card-content-1{
+        height: 110px;
+        width: 100%;
+        background:#FFFFFF;
+      box-shadow: 0 3px 6px #CECECE73;
+        border-radius: 10px;
+        margin-top: 5%;
+        border: 1.5px solid #F576B3;
+        
+    }
+    
+    .all-text{
+      
+        width: 90%;
+       padding: 16px;
+    }
+    
+    .all-text-1{
+        width: 90%;
+        padding: 16px;
+   
+    }
+    
+    
+    
+    .text{
+        color: #848383;
+        font-size: 15px;
+
+        font-family: Poppins Regular;
+    }
+    
+    .text-1{
+        color: #100F0F;
+        font-size: 15px;
+        font-family: Poppins Regular;
+    }
+    
+    .time{
+        color: #848383;
+        font-size: 14px;
+        font-family: Poppins Regular;
+        margin-top: 7px;
+    }
+    
+    .time-1{
+        color: #6B7A86;
+        font-size: 14px;
+        font-family: Poppins Regular;
+        margin-top: 7px;
+    }
+
+    .text .highlight {
+        font-family: Poppins SemiBold;
+        
+      }
+
+      .text-1 .highlight {
+        font-family: Poppins SemiBold;
+        
+      }
