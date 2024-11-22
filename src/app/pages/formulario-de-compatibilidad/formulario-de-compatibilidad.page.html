@@ -116,6 +116,28 @@
       </ion-col>
     </ion-row>
 
+    <ion-row>
+      <ion-col>
+        <p class="question-title">¿Te consideras una persona más espiritual o más racional?</p>
+        <ion-item class="custom-item" lines="none">
+          <ion-label> Espiritual </ion-label>
+          <ion-checkbox
+            slot="end"
+            [checked]="answers.espiritual"
+            (ionChange)="selectOption('espiritual', 'racional')"
+          ></ion-checkbox>
+        </ion-item>
+        <ion-item class="custom-item" lines="none">
+          <ion-label> Racional </ion-label>
+          <ion-checkbox
+            slot="end"
+            [checked]="answers.racional"
+            (ionChange)="selectOption('espiritual', 'racional')"
+          ></ion-checkbox>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
     <!-- Botón de envío -->
     <ion-row>
       <ion-col>
