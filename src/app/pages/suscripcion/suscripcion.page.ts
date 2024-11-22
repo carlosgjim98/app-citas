@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonModal, ModalController } from '@ionic/angular';
+import { Location } from '@angular/common';
 
 @Component({
     selector: 'app-suscripcion',
@@ -9,7 +10,11 @@ import { IonModal, ModalController } from '@ionic/angular';
 })
 export class SuscripcionPage implements OnInit {
 
-  constructor(private modalController: ModalController, ) { }
+  constructor(private modalController: ModalController, private location: Location ) { }
+
+  goBack() {
+    this.location.back(); // Navega a la página anterior
+  }
 
   @ViewChild('open_modal', { static: true }) open_modal!: IonModal;
 
