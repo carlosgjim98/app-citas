@@ -66,6 +66,13 @@
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
+
+    .arrow{
+
+        width: 13px;
+        height: 13px;
+    }
+   
 }
 
 .card-body{
@@ -76,12 +83,13 @@
 }
 
 .pink-icon{
-    height: 28px;
-    width: 28px;
+    height: 24px;
+    width: 24px;
 }
 
 .card-text{
     font-size: 15px;
     font-family: 'Poppins Medium';
     color: #2C252B;
+    margin-left: 5px ;
 }
