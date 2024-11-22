@@ -29,6 +29,7 @@ export class ProfilePage implements OnInit {
     private navCtrl : NavController,
   ) { }
 
+  
   ngOnInit() {
     this.form = new FormGroup({
       name: new FormControl(''),

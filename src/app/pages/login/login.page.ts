@@ -23,8 +23,15 @@ export class LoginPage implements OnInit {
 
   public isUpdating: boolean;
   public form: FormGroup;
-
+  isAndroid: boolean = false;
+  isIOS: boolean = false;
+  isNameFocused: boolean = false;
+  isEmailFocused: boolean = false;
+  isPasswordFocused: boolean = false;
+  isConfirmPasswordFocused: boolean = false;
+  isInputFocused: boolean = false;
   public usuarioFacebook: User;
+  
 
   showError: boolean = false;
   errorCode: string = '';
@@ -49,6 +56,9 @@ export class LoginPage implements OnInit {
         {validators: [Validators.required, Validators.minLength(8)]}
       ),
     });
+    
+
+    
 
 
     PushNotifications.createChannel({
@@ -93,11 +103,32 @@ export class LoginPage implements OnInit {
     
   }
 
+  ionViewWillEnter() {
+    this.isAndroid = this.platform.is('android');
+    this.isIOS = this.platform.is('ios');
+  }
+
   async ionViewDidEnter(){
     GoogleAuth.initialize();
     await FacebookLogin.initialize({ appId: '748077676570420' });
 
   }
+
+  onFocus(input: string) {
+    console.log('focus', input)
+    this.isNameFocused = input === 'name';
+    this.isEmailFocused = input === 'email';
+    this.isPasswordFocused = input === 'password';
+    this.isConfirmPasswordFocused = input === 'confirmPassword';
+  }
+  
+  onBlur() {
+    this.isNameFocused = false;
+    this.isEmailFocused = false;
+    this.isPasswordFocused = false;
+    this.isConfirmPasswordFocused = false;
+  }
+
 
   public submitForm() {
 

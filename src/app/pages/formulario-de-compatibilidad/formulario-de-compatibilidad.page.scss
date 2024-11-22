@@ -155,14 +155,16 @@ ion-grid{
   
   
   
+   
   .submit-button {
-    margin-top: 20px;
-    --background: #ef3890;
+    margin-top: 30px;
+    --background: linear-gradient(90deg, #EF3890, #F576B3); 
     color: white;
     font-size: 16px;
     font-family: Poppins Regular;
     border-radius: 10px;
-    height: 58px;
-    width: 398px;
+    min-height: 58px;
+    width: 100%
   }
+  
   

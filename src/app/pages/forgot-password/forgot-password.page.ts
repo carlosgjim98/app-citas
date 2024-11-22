@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ModalController } from '@ionic/angular';
 import { ApiService } from 'src/app/services/api.service';
 import { UtilitiesService } from 'src/app/services/utilities.service';
+import { Location } from '@angular/common';
 
 @Component({
     selector: 'app-forgot-password',
@@ -18,9 +19,13 @@ export class ForgotPasswordPage implements OnInit {
   constructor(
     private modalCtrl: ModalController,
     private utilities: UtilitiesService,
-    private api: ApiService) {
+    private api: ApiService,
+    private location: Location) {
   }
 
+  goBack() {
+    this.location.back(); // Navega a la página anterior
+  }
 
   /**
    * Inicializamos el formulario

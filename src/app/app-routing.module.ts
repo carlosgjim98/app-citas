@@ -109,6 +109,7 @@ const routes: Routes = [
   },
   {
     path: 'suscripcion',
+
     loadChildren: () => import('./pages/suscripcion/suscripcion.module').then(m => m.SuscripcionPageModule)
   },
   {
@@ -118,6 +119,10 @@ const routes: Routes = [
   {
     path: 'confirmar-cita',
     loadChildren: () => import('./pages/confirmar-cita/confirmar-cita.module').then( m => m.ConfirmarCitaPageModule)
+  },
+{
+  path: 'suscripcion',
+    loadChildren: () => import('./pages/suscripcion/suscripcion.module').then( m => m.SuscripcionPageModule)
   },
   {
     path: 'mis-citas',
@@ -134,12 +139,21 @@ const routes: Routes = [
   },
   {
     path: 'configurar-mis-datos',
-    loadChildren: () => import('./pages/configurar-mis-datos/configurar-mis-datos.module').then( m => m.ConfigurarMisDatosPageModule)
+    loadChildren: () => import('./pages/configurar-mis-datos/configurar-mis-datos.module').then(m => m.ConfigurarMisDatosPageModule)
+  },
+  {
+    path: 'mensajes-chat',
+    loadChildren: () => import('./pages/mensajes-chat/mensajes-chat.module').then( m => m.MensajesChatPageModule)
+  },
+  {
+    path: 'condiciones-venta',
+    loadChildren: () => import('./pages/condiciones-venta/condiciones-venta.module').then( m => m.CondicionesVentaPageModule)
   },
   {
     path: 'formulario-de-compatibilidad',
     loadChildren: () => import('./pages/formulario-de-compatibilidad/formulario-de-compatibilidad.module').then( m => m.FormularioDeCompatibilidadPageModule)
-  },  {
+  },
+  {
     path: 'mi-suscripcion',
     loadChildren: () => import('./pages/mi-suscripcion/mi-suscripcion.module').then( m => m.MiSuscripcionPageModule)
   },
@@ -150,7 +164,9 @@ const routes: Routes = [
   {
     path: 'condiciones-de-venta',
     loadChildren: () => import('./pages/condiciones-de-venta/condiciones-de-venta.module').then( m => m.CondicionesDeVentaPageModule)
-  }
+  },
+
+
 
 
 

@@ -33,27 +33,19 @@ export class ChatPage implements OnInit {
      
     
       this.mensajes = [
-       {
-        nombre: 'Alberto P.',
-        foto: 'assets/imgs/img-perfil-usuario@2x.png',
-        tiempo: '10 minutos',
-        nuevoMensaje: '(3) mensajes nuevos',
-        mensaje: '',
-        tieneNuevo: true,
-        
-      },
+      
       {
         nombre: 'Marta A.',
         nombreCompleto: "Marta Arias",
         foto: 'assets/imgs/Elipse 304@2x.png',
         tiempo: 'Hace 2 días',
-        nuevoMensaje: '',
-        mensaje: 'Tú: has enviado 1 imagen',
-        tieneNuevo: false,
+        nuevoMensaje: 'Marta: Yo también!',
+        mensaje: '',
+        tieneNuevo: true,
         ruta: ['/mensajes-chat']
       },
       {
-        nombre: 'Mario H.',
+        nombre: 'Mario B.',
         foto: 'assets/imgs/Elipse 407@2x.png',
         tiempo: 'Hace 1 semana',
         nuevoMensaje: '',

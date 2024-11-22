@@ -22,10 +22,24 @@
 }
 
 @font-face {
+  font-family: 'Poppins Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/Poppins-Light.ttf');
+}
+
+@font-face {
   font-family: 'Poppins SemiBold';
   font-style: normal;
   font-weight: normal;
   src: url('/assets/fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'LexendRegular';
+  font-style: normal;
+  font-weight: normal; 
+  src: url('/assets/fonts/Lexend-Regular.ttf') ; 
 }
 
 

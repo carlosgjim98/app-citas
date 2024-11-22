@@ -38,7 +38,7 @@ ion-header{
         justify-content: center;
         margin-top: 30px;
         margin-left:-30px;
-        --background:#F576B3;
+        --background:#EF3890;
     
         border-radius: 10px;
       }
@@ -77,6 +77,11 @@ ion-grid{
 
     margin-top: 0 !important;
 }
+.header-container{
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 16px;
+  margin-right: 16px;
 
 .title {
     text-align: left;
@@ -92,6 +97,7 @@ ion-grid{
     color: #838383;
  
   }
+}
   
   .question-title {
     font-size: 16px;
@@ -154,14 +160,16 @@ ion-grid{
   
   
   
+   
   .submit-button {
-    margin-top: 20px;
-    --background: #ef3890;
+    margin-top: 30px;
+    --background: linear-gradient(90deg, #EF3890, #F576B3); 
     color: white;
     font-size: 16px;
     font-family: Poppins Regular;
     border-radius: 10px;
-    height: 58px;
-    width: 398px;
+    min-height: 58px;
+    width: 100%
   }
+  
   
