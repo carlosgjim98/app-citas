@@ -13,6 +13,8 @@ export class FormularioDeCompatibilidadPage implements OnInit {
     night: false,
     beach: false,
     mountain: false,
+    espiritual: false,
+    racional: false,
   };
 
   selectedRating: number | null = null;

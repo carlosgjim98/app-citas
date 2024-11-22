@@ -111,12 +111,20 @@
   --ion-color-medium-tint: #9d9fa6 !important;
 
   /** light **/
-  --ion-color-light: #f4f5f8 !important;
-  --ion-color-light-rgb: 244, 245, 248 !important;
+  --ion-color-light: #ffffff !important;
+  --ion-color-light-rgb: 255, 255, 255 !important;
   --ion-color-light-contrast: #000000 !important;
   --ion-color-light-contrast-rgb: 0, 0, 0 !important;
   --ion-color-light-shade: #d7d8da !important;
   --ion-color-light-tint: #f5f6f9 !important;
+
+  /** white **/
+  --ion-color-white: #ffffff !important;
+  --ion-color-white-rgb: 255, 255, 255 !important;
+  --ion-color-white-contrast: #000000 !important;
+  --ion-color-white-contrast-rgb: 0, 0, 0 !important;
+  --ion-color-white-shade: #d7d8da !important;
+  --ion-color-white-tint: #f5f6f9 !important;
 
   --fc-small-font-size: .85em !important;
 
