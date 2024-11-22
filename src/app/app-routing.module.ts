@@ -144,10 +144,27 @@ const routes: Routes = [
   {
     path: 'mensajes-chat',
     loadChildren: () => import('./pages/mensajes-chat/mensajes-chat.module').then( m => m.MensajesChatPageModule)
-  },  {
+  },
+  {
     path: 'condiciones-venta',
     loadChildren: () => import('./pages/condiciones-venta/condiciones-venta.module').then( m => m.CondicionesVentaPageModule)
   },
+  {
+    path: 'formulario-de-compatibilidad',
+    loadChildren: () => import('./pages/formulario-de-compatibilidad/formulario-de-compatibilidad.module').then( m => m.FormularioDeCompatibilidadPageModule)
+  },
+  {
+    path: 'mi-suscripcion',
+    loadChildren: () => import('./pages/mi-suscripcion/mi-suscripcion.module').then( m => m.MiSuscripcionPageModule)
+  },
+  {
+    path: 'usuarios-bloqueados',
+    loadChildren: () => import('./pages/usuarios-bloqueados/usuarios-bloqueados.module').then( m => m.UsuariosBloqueadosPageModule)
+  },
+  {
+    path: 'condiciones-de-venta',
+    loadChildren: () => import('./pages/condiciones-de-venta/condiciones-de-venta.module').then( m => m.CondicionesDeVentaPageModule)
+  }
 
 
 

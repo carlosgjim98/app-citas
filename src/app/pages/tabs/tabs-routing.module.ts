@@ -20,8 +20,8 @@ const routes: Routes = [
         loadChildren: () => import('../chat/chat.module').then(m => m.ChatPageModule)
       },
       {
-        path: 'calendar',
-        loadChildren: () => import('../calendar/calendar.module').then(m => m.CalendarPageModule)
+        path: 'citas',
+        loadChildren: () => import('../mis-citas/mis-citas.module').then(m => m.MisCitasPageModule)
       },
 
       {
@@ -34,11 +34,6 @@ const routes: Routes = [
         pathMatch: 'full'
       }
     ]
-  },
-  {
-    path: '',
-    redirectTo: '/tabs/inicio',
-    pathMatch: 'full'
   }
 ];
 

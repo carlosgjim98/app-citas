@@ -91,6 +91,7 @@ ion-content{
         color:white ;
     font-size: 16px;
     font-family: 'Poppins SemiBold';
+    margin-left: 5px;
     }
 }
 
@@ -110,6 +111,19 @@ ion-content{
 
 //////////////  MODAL ////////////////
 
+ion-modal {
+    --height: 60%;
+    --border-top-left-radius: 20px;
+    --border-top-right-radius: 20px;
+
+  }
+
+.icon-content{
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
 .close-cross{
     height: 13px;
     width: 13px;
@@ -128,6 +142,17 @@ ion-content{
     width: 90%;
     margin-left: 5%;
     height: 66px;
+    display: flex;
+    flex-direction: column;
+}
+
+.visa-icon{
+    padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 14px;
+  width: 19px;
 }
 
 .grey-title{
@@ -145,44 +170,82 @@ ion-content{
 .title-input{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.input-content{
+    display: flex;
+    align-items: center;
 }
 
 .visa-num-icon{
-    // width: 90%;
-    // margin-left: 5%;
     height: 48px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: 1px solid #ACA6A9;
     width: 100%;
+    --padding-start: 10px;
+    --padding-end: 10px;
+}
+
+.visa-icons{
+    margin-left: 3px;
 }
 
 .visa-info-content{
     // border: 1px solid #ACA6A9;
     // border-radius: 10px;
     // height: 96px;
-    width: 90%;
-    margin-left: 5%;
-    padding: 0;
+    width: 98%;
+    margin-left: 3%;
+    padding: 0;   
 }
+
+// .item-date{
+//     width: 98%;
+//     margin-left: 3%;
+//     padding: 0;  
+// }
 
 .visa-date{
     border-right: 1px solid #ACA6A9;
     border-bottom-left-radius: 10px; 
     width: 50%;
-    
+    --padding-start: 10px;   
 }
 
 .visa-cvc{
     border-bottom-right-radius: 10px;
     border-right: 1px solid #ACA6A9;
     width: 50%;
+    padding-left: 10px;
+    --padding-start: 10px;
+}
+
+.grey-title-2{
+    color: #ACA6A9;
+    font-family: 'Poppins Medium';
+    font-size: 14px;
+    margin-left: 5%;
 }
 
 .last-item{
     border: 1px solid #ACA6A9;
     height: 69px;
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
+    margin-left: 5%;
 }
 
+.last-button-modal{
+    margin-bottom: 10%;
+
+    span{
+        color:white ;
+    font-size: 16px;
+    font-family: 'Poppins SemiBold';
+    margin-left: 5px;
+    }
+}

@@ -7,7 +7,7 @@ import { UtilitiesService } from 'src/app/services/utilities.service';
 import { codeErrors } from 'src/app/utils/utils';
 import { Camera, CameraResultType } from '@capacitor/camera';
 import { PushNotifications } from '@capacitor/push-notifications';
-import { ActionSheetController } from '@ionic/angular';
+import { ActionSheetController, NavController } from '@ionic/angular';
 @Component({
     selector: 'app-profile',
     templateUrl: './profile.page.html',
@@ -25,7 +25,8 @@ export class ProfilePage implements OnInit {
     private apiService: ApiService,
     private utilities: UtilitiesService,
     public auth: AuthenticationService,
-    public actionsheetCtrl: ActionSheetController
+    public actionsheetCtrl: ActionSheetController,
+    private navCtrl : NavController,
   ) { }
 
   
@@ -56,6 +57,10 @@ export class ProfilePage implements OnInit {
     }, (error) => {
       this.utilities.showToast(codeErrors(error));
     });
+  }
+
+  redirect(){
+    this.navCtrl.navigateForward("/configurar-mis-datos")
   }
 
   async adjuntarImagen() {
