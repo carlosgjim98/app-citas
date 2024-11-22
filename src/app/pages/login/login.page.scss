@@ -90,8 +90,9 @@
   border: 1px solid #f576b3;
 }
 
-
-
+ion-input-password-toggle::ng-deep .icon {
+  color: #838383;
+}
 .icon-input {
   width: 16px;
   height: 16px;
