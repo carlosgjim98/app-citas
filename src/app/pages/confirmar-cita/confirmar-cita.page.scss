@@ -231,11 +231,11 @@ ion-header{
        
   .submit-button {
     margin-top: 30px;
-    --background: #ef3890;
+    --background: linear-gradient(90deg, #EF3890, #F576B3); 
     color: white;
     font-size: 16px;
     font-family: Poppins Regular;
     border-radius: 10px;
-    max-height: 58px;
+    min-height: 58px;
     width: 100%
   }

@@ -73,26 +73,34 @@ ion-header{
       }
     }
 
-.title {
-    text-align: left;
-    font-size: 22px;
-    color: #292426;
-    font-family: Poppins SemiBold;
- 
-  }
-  
-  .subtitle {
-    text-align: left;
-    font-size: 14px;
-    color: #838383;
- 
-  }
+    .header-container{
+      padding-top: 0;
+      margin-top: 0;
+      margin-left: 16px;
+      margin-right: 16px;
+    
+    .title {
+        text-align: left;
+        font-size: 22px;
+        color: #292426;
+        font-family: Poppins SemiBold;
+     
+      }
+      
+      .subtitle {
+        text-align: left;
+        font-size: 14px;
+        color: #838383;
+        margin-right: 50px;
+     
+      }
+    }
 
   .users {
     display: flex;
     flex-direction: column;
     gap: 22px;
-    margin-top: 31px;
+    margin-top: 20px;
   }
   
   .user-card {
@@ -211,15 +219,15 @@ ion-header{
       
  
 
-   
-  .submit-button {
-    margin-top: 30px;
-    --background: #ef3890;
-    color: white;
-    font-size: 16px;
-    font-family: Poppins Regular;
-    border-radius: 10px;
-    max-height: 58px;
-    width: 100%
-  }
   
+      .submit-button {
+        margin-top: 30px;
+        --background: linear-gradient(90deg, #EF3890, #F576B3); 
+        color: white;
+        font-size: 16px;
+        font-family: Poppins Regular;
+        border-radius: 10px;
+        min-height: 58px;
+        width: 100%
+      }
+      
