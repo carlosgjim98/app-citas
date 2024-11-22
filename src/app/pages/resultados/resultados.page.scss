@@ -205,16 +205,23 @@ ion-header{
       --background: linear-gradient(90deg, #EF3890, #F576B3); 
       margin-top: 11px;
       font-size: 12px ;
+
     }
 
     .select-button.selected {
         --background: linear-gradient(90deg, #EF3890, #F576B3);   
-        --color: white;        
+        --color: white;   
+        ion-icon{
+          color: white;
+        }     
       }
       
       .select-button.unselected {
         --background: #D3D3D3; 
-        --color: #6F676B;         
+        color: #6F676B;   
+        ion-icon{
+          --icon-color: #6F676B !important;
+        }      
       }
       
  
