@@ -11,17 +11,17 @@
   
   </div>
 
-  <div class="card">
-    <p class="card-title">Tu plan</p>
+  <div class="card" *ngFor="let dato of datos">
+    <p class="card-title">{{dato.titulo}}</p>
 
     <div class="inside-card">
-      <p class="date-bonus">Dos bonos de cita</p>
-      <p class="price">14,99€ / <span class="month">al mes</span></p>
+      <p class="date-bonus">{{dato.bonus}}</p>
+      <p class="price">{{dato.precio}}<span class="month">{{dato.tiempo}}</span></p>
     </div>
 
     <hr>
 
-    <p class="next-reno">Próxima renovación: <span class="date-reno">24/11/2024</span></p>
+    <p class="next-reno">{{dato.nuevoMensaje}} <span class="date-reno">{{dato.fecha}}</span></p>
 
   </div>
 

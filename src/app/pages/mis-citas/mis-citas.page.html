@@ -7,23 +7,16 @@
 
  <p class="grey-text">Noviembre</p>
 
- <div class="card-content" routerLink="/detalle-cita">
+ <div class="card-content" [routerLink]="cita.ruta" *ngFor="let cita of citas" [queryParams]="{ horaCita: cita.hora, restaurante: cita.restaurante, diaNumero: cita.diaNumero }">
   <div>
-    <p class="day-name">Vie</p>
-    <p class="num-day">10</p>
+    <p class="day-name">{{cita.dia}}</p>
+    <p class="num-day">{{cita.diaNumero}}</p>
   </div>
-  <p class="card-text">Cita en restaurante <span class="card-text-bold"> Nombre restaurante</span>
-  a las <span class="card-text-bold">9:30 P.M</span></p>
+  <p class="card-text">Cita en restaurante <span class="card-text-bold"> {{cita.restaurante}}</span>
+  a las <span class="card-text-bold">{{cita.hora}}</span></p>
  </div>
 
- <div class="card-content">
-  <div>
-    <p class="day-name">Vie</p>
-    <p class="num-day">16</p>
-  </div>
-  <p class="card-text">Cita en restaurante <span class="card-text-bold"> Nombre restaurante</span>
-  a las <span class="card-text-bold">9:30 P.M</span></p>
- </div>
+ 
 
 
 

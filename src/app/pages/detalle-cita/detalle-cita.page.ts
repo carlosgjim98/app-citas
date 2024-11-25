@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'app-detalle-cita',
@@ -8,6 +9,11 @@ import { Location } from '@angular/common';
     standalone: false
 })
 export class DetalleCitaPage implements OnInit {
+
+  horaCita: string = '';
+  restaurante: string = '';
+  diaNumero: string = '';
+  returnLink: string = '/tabs/mensajes';
 
   users = [
     {
@@ -18,7 +24,7 @@ export class DetalleCitaPage implements OnInit {
     },
   ]
 
-  constructor(private location: Location) { }
+  constructor(private activatedRoute: ActivatedRoute, private location: Location) { }
 
 
   goBack() {
@@ -26,6 +32,13 @@ export class DetalleCitaPage implements OnInit {
   }
 
   ngOnInit() {
+    // Obtener los parámetros de la URL
+    this.activatedRoute.queryParams.subscribe(params => {
+      this.horaCita = params['horaCita'];  // Nombre del chat
+      this.restaurante = params['restaurante'];  // Foto del avatar
+      this.diaNumero = params['diaNumero']
+    });
+
   }
 
 }
