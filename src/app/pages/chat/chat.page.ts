@@ -46,6 +46,7 @@ export class ChatPage implements OnInit {
       },
       {
         nombre: 'Mario B.',
+        nombreCompleto: "Mario Blanco",
         foto: 'assets/imgs/Elipse 407@2x.png',
         tiempo: 'Hace 1 semana',
         nuevoMensaje: '',

@@ -70,7 +70,7 @@
       </p>
     </div>
 
-    <ion-button expand="block" type="button" routerLink="/formulario">Registrarme</ion-button>
+    <ion-button expand="block" type="button" [routerLink]="'/formulario-de-compatibilidad'" [queryParams]="{ fromPage: 'register' }">Registrarme</ion-button>
   </form>
 
 <div class="goLogin">

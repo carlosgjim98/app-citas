@@ -95,10 +95,7 @@ const routes: Routes = [
     path: 'contact-us',
     loadChildren: () => import('./pages/contact-us/contact-us.module').then(m => m.ContactUsPageModule)
   },
-  {
-    path: 'formulario',
-    loadChildren: () => import('./pages/formulario/formulario.module').then(m => m.FormularioPageModule)
-  },
+  
   {
     path: 'resultados',
     loadChildren: () => import('./pages/resultados/resultados.module').then(m => m.ResultadosPageModule)
@@ -164,7 +161,8 @@ const routes: Routes = [
   {
     path: 'condiciones-de-venta',
     loadChildren: () => import('./pages/condiciones-de-venta/condiciones-de-venta.module').then( m => m.CondicionesDeVentaPageModule)
-  },  {
+  },
+  {
     path: 'notificaciones',
     loadChildren: () => import('./pages/notificaciones/notificaciones.module').then( m => m.NotificacionesPageModule)
   },

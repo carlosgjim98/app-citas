@@ -28,7 +28,7 @@
       <ion-icon class="arrow" src="../../../assets/icons/Icon_ionic-ios-arrow-forward_pink.svg"></ion-icon>
   </div>
 
-  <div class="card" routerLink="/formulario-de-compatibilidad">
+  <div class="card" [routerLink]="'/formulario-de-compatibilidad'" [queryParams]="{ fromPage: 'profile' }">
     <div class="card-body">
       <ion-icon class="pink-icon" src="../../../assets/icons/Grupo_12327.svg"></ion-icon>
       <p class="card-text">Formulario de compatibilidad</p>

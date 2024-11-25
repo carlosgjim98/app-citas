@@ -45,7 +45,10 @@
       </ion-item>
 
       <p class="forgot-password" routerLink="/forgot-password">He olvidado mi contraseña</p>
-      <ion-button class="entrar" expand="block" type="button" routerLink="/formulario">Entrar</ion-button>
+      <ion-button class="entrar" expand="block" type="button" [routerLink]="'/formulario-de-compatibilidad'" [queryParams]="{ fromPage: 'login' }">
+        Entrar
+      </ion-button>
+      
      
     </form>
 

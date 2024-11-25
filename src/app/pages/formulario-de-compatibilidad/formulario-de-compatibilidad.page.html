@@ -141,9 +141,10 @@
     <!-- Botón de envío -->
     <ion-row>
       <ion-col>
-        <ion-button expand="block" class="submit-button" (click)="submitAnswers()" routerLink="/tabs/perfil">
-          Guardar cambios
+        <ion-button expand="block" class="submit-button" [routerLink]="routerLink" (click)="submitAnswers()">
+          {{ submitButtonText }}
         </ion-button>
+        
       </ion-col>
     </ion-row>
   </ion-grid>
