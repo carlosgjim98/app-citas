@@ -67,18 +67,18 @@ ion-content{
 .dinner{
     height: 92.89px;
     width: 92.96px;
-    margin-right: 12px;
+    //margin-right: 12px;
 }
 
 .fire{
     height: 127.58px;
-    width: 127.79px;
+    width: 117.79px;
 }
 
 .love-letter{
     height:101.54px ;
     width: 101.47px;
-    margin-right: 12px;
+    //margin-right: 12px;
 }
 
 .last-button{
@@ -248,4 +248,9 @@ ion-modal {
     font-family: 'Poppins SemiBold';
     margin-left: 5px;
     }
+}
+
+.fondo-tarjeta{
+    width: 90%;
+    margin-left: 5%;
 }
